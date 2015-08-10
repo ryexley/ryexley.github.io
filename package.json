@@ -1,0 +1,24 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Résumé: Bob Yexley",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ryexley/resume.git"
+  },
+  "author": "Bob Yexley",
+  "license": "CC-BY-NC-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/ryexley/resume/issues"
+  },
+  "homepage": "https://github.com/ryexley/resume#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "require-dir": "^0.3.0",
+    "resume-cli": "^0.4.8"
+  }
+}
