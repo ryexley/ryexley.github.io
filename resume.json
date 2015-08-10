@@ -1,29 +1,29 @@
 {
   "basics": {
     "name": "Bob Yexley",
-    "label": "Programmer",
+    "label": "Web and Distributed Software Developer",
     "picture": "",
     "email": "bob@yexley.net",
-    "phone": "(912) 555-4321",
-    "website": "http://richardhendricks.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "phone": "(865) 399-3696",
+    "website": "http://bob.yexley.net",
+    "summary": "Family-first husband and father of two boys, I believe a good work-life balance is essential to maintaining the focus and productivity needed to achieve great results. I believe in using the right tool for the job to get that done in the most effective and efficient manner possible. In my 15+ years of experience, that has involved the use of various tools and platforms, but most recently my focus and specialization has been on native front-end web application development using HTML5, CSS3 and JavaScript. I'm passionate about delivering high-quality, user-friendly solutions that deliver business value to my customers and clients on the most ubiquitous and accessible platform available to them: the web.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "2706 Berringer Station Ln.",
+      "postalCode": "37932",
+      "city": "Knoxville",
+      "countryCode": "TN",
+      "region": "East Tennessee"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": ""
+        "username": "ryexley",
+        "url": "https://twitter.com/ryexley"
       },
       {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.com/dandymusicnl"
+        "network": "GitHub",
+        "username": "ryexley",
+        "url": "https://github.com/ryexley"
       }
     ]
   },
@@ -89,11 +89,20 @@
   "skills": [
     {
       "name": "Web Development",
-      "level": "Master",
+      "level": "Advanced",
       "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "ES6",
+        "ES2015"
+        "React",
+        "Flux",
+        "Backbone.js",
+        "Knockout.js",
+        "Webpack",
+        "Grunt",
+        "Gulp"
       ]
     },
     {
