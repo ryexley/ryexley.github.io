@@ -1,6 +1,14 @@
 var path = require("path");
 var gulp = require("gulp");
 
-gulp.task("watch", function () {
+function r (target) {
+  return path.resolve(__dirname, "../..", target);
+}
 
+gulp.task("watch", function () {
+  gulp.watch([
+    r("resume.json"),
+    r("build/templates/**/*.html"),
+    r("style/**/*.css")
+  ], ["generate-resume-html"]);
 });
