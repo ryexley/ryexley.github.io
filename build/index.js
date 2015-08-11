@@ -61,15 +61,30 @@ var buildApi = {
       self.getTemplate(function (templateSource) {
         var template = Handlebars.compile(templateSource),
             resumeSource = template(options.data),
-            outputFile = options.outputFile || path.resolve(__dirname, "../index.html");
+            targetFolder = path.resolve(__dirname, "../view/"),
+            outputFile = options.outputFile || path.resolve(__dirname, "../view/index.html");
 
         rimraf(outputFile, function () {
-          self.writeGeneratedResume(outputFile, resumeSource, function (err) {
-            if (err) {
-              console.log("ERROR generating resume:\n", err);
-            }
+          fs.exists(targetFolder, function (exists) {
+            if (!exists) {
+              fs.mkdir(targetFolder, function () {
+                self.writeGeneratedResume(outputFile, resumeSource, function (err) {
+                  if (err) {
+                    console.log("ERROR generating resume:\n", err);
+                  }
 
-            console.log("SUCCESS! Resume generated to: ", outputFile);
+                  console.log("SUCCESS! Resume generated to: ", outputFile);
+                });
+              });
+            } else {
+              self.writeGeneratedResume(outputFile, resumeSource, function (err) {
+                if (err) {
+                  console.log("ERROR generating resume:\n", err);
+                }
+
+                console.log("SUCCESS! Resume generated to: ", outputFile);
+              });
+            }
           });
         });
       });

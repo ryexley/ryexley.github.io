@@ -4,7 +4,8 @@
   "description": "Résumé: Bob Yexley",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp",
+    "edit": "gulp edit"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/ryexley/resume#readme",
   "devDependencies": {
+    "browser-sync": "^2.8.2",
     "gulp": "^3.9.0",
     "handlebars": "^3.0.3",
     "require-dir": "^0.3.0",
