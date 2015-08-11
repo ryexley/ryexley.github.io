@@ -6,10 +6,12 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     {{> header data=basics}}
-    {{> skills data=skills}}
-    {{> work-history data=work}}
-    {{> publications data=publications}}
-    {{> interests data=interests}}
+    <main>
+      {{> skills data=skills}}
+      {{> work-history data=work}}
+      {{> publications data=publications}}
+      {{> interests data=interests}}
+    </main>
     {{> scripts}}
   </body>
 </html>

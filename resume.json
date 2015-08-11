@@ -34,6 +34,7 @@
       "website": "http://piedpiper.com",
       "startDate": "2013-12-01",
       "endDate": "2014-12-01",
+      "keywords": ["JavaScript", "HTML5", "CSS3", "PostCSS", "Handlebars", "Gulp"],
       "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
       "highlights": [
         "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
@@ -106,12 +107,11 @@
       ]
     },
     {
-      "name": "Compression",
-      "level": "Master",
+      "name": "Architecture",
+      "level": "Intermediate",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "REST",
+        "Hypermedia"
       ]
     }
   ],

@@ -1,0 +1,31 @@
+<section class="work-history">
+  <header>
+    <h1>Work History</h1>
+  </header>
+  <ul class="work-history--entries">
+  {{#each data}}
+    <li class="work-history--entry">
+      <div class="work-history--entry-company">
+      {{#if website}}
+        <a href="{{website}}">{{company}}</a>
+      {{else}}
+        {{company}}
+      {{/if}}
+      </div>
+      <div class="work-history--entry-dates">From {{startDate}} to {{endDate}}</div>
+      <div class="work-history--entry-position">{{position}}</div>
+      <ul class="work-history--entry-keywords">
+      {{#each keywords}}
+        <li class="work-history--entry-keyword keyword-{{this}}">{{this}}</li>
+      {{/each}}
+      </ul>
+      <p class="work-history--entry-summary">{{summary}}</p>
+      <ul class="work-history--entry-highlights">
+      {{#each highlights}}
+        <li class="work-history--entry-highlight">{{this}}</li>
+      {{/each}}
+      </ul>
+    </li>
+  {{/each}}
+  </ul>
+</section>
