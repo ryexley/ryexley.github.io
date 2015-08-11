@@ -1,5 +1,6 @@
 var path = require("path");
 var fs = require("fs");
+var rimraf = require("rimraf");
 var Handlebars = require("handlebars");
 
 var buildApi = {
@@ -62,36 +63,17 @@ var buildApi = {
             resumeSource = template(options.data),
             outputFile = options.outputFile || path.resolve(__dirname, "../index.html");
 
-        fs.exists(outputFile, function (exists) {
-          if (exists) {
-            console.log("OUTPUT FILE EXISTS! DELETING!");
-            fs.unlink(outputFile, function (err) {
-              if (err) {
-                console.log("ERROR deleting file:", err);
-                throw err;
-              }
+        rimraf(outputFile, function () {
+          self.writeGeneratedResume(outputFile, resumeSource, function (err) {
+            if (err) {
+              console.log("ERROR generating resume:\n", err);
+            }
 
-              self.writeGeneratedResume(outputFile, resumeSource, function (err) {
-                if (err) {
-                  console.log("ERROR generating resume:\n", err);
-                }
-
-                console.log("SUCCESS! Resume generated to: ", outputFile);
-              });
-            });
-          } else {
-            console.log("OUTPUT FILE DOES NOT EXIST. WRITING!");
-            self.writeGeneratedResume(outputFile, resumeSource, function (err) {
-              if (err) {
-                console.log("ERROR generating resume:\n", err);
-              }
-
-              console.log("SUCCESS! Resume generated to: ", outputFile);
-            });
-          }
+            console.log("SUCCESS! Resume generated to: ", outputFile);
+          });
         });
       });
-});
+    });
   }
 };
 
