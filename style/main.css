@@ -7,3 +7,10 @@
 body {
   background: $appBackgroundColor;
 }
+
+main {
+  @mixin min-width $bp-desktop {
+    margin: 0 auto;
+    width: $bp-desktop;
+  }
+}

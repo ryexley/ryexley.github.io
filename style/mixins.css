@@ -26,3 +26,9 @@
 @define-mixin centered {
   text-align: center;
 }
+
+@define-mixin min-width $bp: 360px {
+  @media all and (min-width: $bp) {
+    @mixin-content;
+  }
+}

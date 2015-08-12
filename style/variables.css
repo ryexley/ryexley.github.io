@@ -7,3 +7,5 @@ $editorFont: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucid
 $appBackgroundColor: #fff; /* #f7fafb; */
 
 $documentBackgroundColor: #151718;
+
+$bp-desktop: 880px;
