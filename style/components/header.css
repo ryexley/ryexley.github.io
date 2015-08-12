@@ -1,55 +1,43 @@
+$headerMinHeight: 27rem;
+$headerGradientStart: rgba(115, 64, 196,.95);
+$headerGradientStop: rgba(49, 142, 223,.95);
+
 header.main {
   @mixin centered;
-  background: linear-gradient(135deg, rgba(45, 60, 85, 0.95), rgba(85, 95, 115, 0.95));
+  @mixin text-shadow;
+  background: linear-gradient(145deg, $headerGradientStart, $headerGradientStop);
   color: #fff;
   margin: 0;
-  padding: 2rem 5rem;
+  padding: 1rem;
   position: relative;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 
   @mixin min-width $bp-desktop {
+    height: 100vh;
+    min-height: $headerMinHeight;
+
     p {
       margin-left: auto;
       margin-right: auto;
       width: $bp-desktop;
     }
   }
+}
 
-/*
-  &::before {
-    animation: colorFade 30s 5s infinite linear;
-    background: linear-gradient(to left, rgba(45, 60, 85, 0.95) 0%, rgba(85, 95, 115, 0.95) 50%, rgba(45, 60, 85, 0.95) 100%);
-    background-size: 200% 200%;
-    background-position: 100% 0;
-    bottom: 0;
-    content: "";
-    display: block;
-    left: 0;
-    position: absolute;
-    right: 0;
+.main-header--content {
+  @mixin min-width $bp-desktop {
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+
+  @mixin max-height $headerMinHeight {
     top: 0;
-    z-index: -1;
-  }
-*/
-}
-
-@keyframes colorFade {
-  0% {
-    background-position: 100% 0;
-  }
-  50% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: -100% 0;
+    transform: none;
   }
 }
 
-.basics--profiles {
-  @mixin floated-list;
-  display: inline-block;
-  text-align: center;
-  text-shadow: none;
+.highlighted-technology-buttons {
+  @mixin centered-list;
 }
 
 .basics--contact-details {

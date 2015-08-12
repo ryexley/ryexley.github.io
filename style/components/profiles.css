@@ -1,0 +1,49 @@
+.basics--profiles {
+  @mixin centered-list;
+  text-shadow: none;
+
+  li {
+    transition: all 0.5s ease;
+  }
+}
+
+.basics--profile {
+  &:hover {
+    transform: rotate(360deg) scale(1.2);
+    transition: all 0.5s ease;
+  }
+
+  a {
+    @mixin text-shadow;
+    color: #fff;
+    font-family: FontAwesome;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: $strokeColor;
+    }
+
+    span {
+      display: none;
+    }
+  }
+}
+
+.profile-Twitter {
+  a {
+    &::after {
+      content: "\f099";
+    }
+  }
+}
+
+.profile-GitHub {
+  a {
+    &::after {
+      content: "\f09b";
+    }
+  }
+}

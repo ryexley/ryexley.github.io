@@ -1,4 +1,10 @@
-.skills {}
+.skills {
+  .section-header {
+    &::before {
+      content: "\f121";
+    }
+  }
+}
 
 .skill-category--keywords {
   @mixin floated-list;

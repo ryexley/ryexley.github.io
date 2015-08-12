@@ -23,12 +23,28 @@
   }
 }
 
+@define-mixin centered-list {
+  @mixin floated-list;
+  display: inline-block;
+  text-align: center;
+}
+
 @define-mixin centered {
   text-align: center;
 }
 
+@define-mixin text-shadow $val: 0px 1px 1px rgba(0, 0, 0, 0.5) {
+  text-shadow: $val;
+}
+
 @define-mixin min-width $bp: 360px {
   @media all and (min-width: $bp) {
+    @mixin-content;
+  }
+}
+
+@define-mixin max-height $bp: 10rem {
+  @media screen and (max-height: $bp) {
     @mixin-content;
   }
 }

@@ -9,8 +9,21 @@ body {
 }
 
 main {
+  padding: 1rem;
+
   @mixin min-width $bp-desktop {
     margin: 0 auto;
     width: $bp-desktop;
+  }
+}
+
+.section-header {
+  border-bottom: 1px solid $strokeColor;
+  margin: 0;
+
+  &::before {
+    color: $strokeColor;
+    font-family: FontAwesome;
+    margin-right: 0.5rem;
   }
 }
