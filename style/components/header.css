@@ -1,0 +1,3 @@
+.basics--profiles {
+  @mixin floated-list;
+}

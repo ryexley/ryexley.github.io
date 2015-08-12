@@ -1,5 +1,28 @@
+@define-mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 @define-mixin unstyled-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+@define-mixin floated-list $dir: left {
+  @mixin unstyled-list;
+  @mixin clearfix;
+  margin: 0 0.5rem;
+
+  & > li {
+    float: $dir;
+    margin: 0.5rem;
+  }
+}
+
+@define-mixin centered {
+  text-align: center;
 }

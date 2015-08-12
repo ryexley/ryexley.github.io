@@ -1,0 +1,5 @@
+.work-history {}
+
+.work-history--entry-keywords {
+  @mixin floated-list;
+}

@@ -4,6 +4,6 @@ $baseFontWeight: 300;
 
 $editorFont: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 
-$appBackgroundColor: #f7fafb;
+$appBackgroundColor: #fff; /* #f7fafb; */
 
 $documentBackgroundColor: #151718;

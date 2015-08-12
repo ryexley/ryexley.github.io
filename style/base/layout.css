@@ -5,8 +5,3 @@
 * + * {
   margin-top: 1rem;
 }
-
-body, main, .app {
-  display: flex;
-  flex-direction: column;
-}
