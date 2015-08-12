@@ -6,9 +6,6 @@ function r (target) {
 }
 
 gulp.task("watch", function () {
-  gulp.watch([
-    r("resume.json"),
-    r("build/templates/**/*.html"),
-    r("style/**/*.css")
-  ], ["generate-resume-html"]);
+  gulp.watch([r("style/**/*.css")], ["css"]);
+  gulp.watch([r("resume.json"), r("build/templates/**/*.html")], ["generate-resume-html"]);
 });

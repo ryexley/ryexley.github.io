@@ -18,9 +18,20 @@
   },
   "homepage": "https://github.com/ryexley/resume#readme",
   "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
     "browser-sync": "^2.8.2",
+    "cssnext": "^1.8.3",
+    "csswring": "^3.0.5",
+    "del": "^1.2.0",
     "gulp": "^3.9.0",
+    "gulp-postcss": "^5.1.10",
     "handlebars": "^3.0.3",
+    "normalize.css": "^3.0.3",
+    "postcss": "^4.1.16",
+    "postcss-import": "^6.2.0",
+    "postcss-mixins": "^0.4.0",
+    "postcss-nested": "^0.3.2",
+    "postcss-simple-vars": "^0.3.0",
     "require-dir": "^0.3.0",
     "rimraf": "^2.4.2"
   }

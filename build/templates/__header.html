@@ -1,6 +1,13 @@
 <header class="basics">
   <h1 class="basics--name">{{data.name}}</h1>
   <p class="basics--summary">{{data.summary}}</p>
+  <ul class="basics--profiles">
+  {{#each data.profiles}}
+    <li class="basics--profile profile-{{network}}">
+      <a href="{{url}}">{{username}} @ {{network}}</a>
+    </li>
+  {{/each}}
+  </ul>
   <div class="basics--contact-details">
     <div class="basics--email">{{data.email}}</div>
     <div class="basics--website">{{data.website}}</div>

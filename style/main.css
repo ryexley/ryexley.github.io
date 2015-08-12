@@ -1,0 +1,9 @@
+@import "normalize.css/normalize";
+@import "variables";
+@import "mixins";
+@import "base/**/*.css";
+@import "components/**/*.css";
+
+body {
+  background: $appBackgroundColor;
+}

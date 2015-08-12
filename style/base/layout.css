@@ -1,0 +1,12 @@
+*, *:before, *:after, html {
+  box-sizing: border-box;
+}
+
+* + * {
+  margin-top: 1rem;
+}
+
+body, main, .app {
+  display: flex;
+  flex-direction: column;
+}
