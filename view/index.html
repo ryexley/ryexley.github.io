@@ -19,10 +19,10 @@
         <h1 class="basics--name">Bob Yexley</h1>
         <h3 class="basics--label">Web and Distributed Software Developer</h3>
         <ul class="highlighted-technology-buttons">
-          <li><span>JS</span></li>
-          <li><span>HTML5</span></li>
-          <li><span>CSS3</span></li>
-          <li><span>node</span></li>
+          <li class="button button-js"><span>JS</span></li>
+          <li class="button button-html5"><span>HTML5</span></li>
+          <li class="button button-css3"><span>CSS3</span></li>
+          <li class="button button-nodejs"><span>node</span></li>
         </ul>
         <p class="basics--summary">Family-first husband and father of two boys, I believe a good work-life balance is essential to maintaining the focus and productivity needed to achieve great results. I believe in using the right tool for the job to get that done in the most effective and efficient manner possible. In my 15+ years of experience, that has involved the use of various tools and platforms, but most recently my focus and specialization has been on native front-end web application development using HTML5, CSS3 and JavaScript. I&#x27;m passionate about delivering high-quality, user-friendly solutions that deliver business value to my customers and clients on the most ubiquitous and accessible platform available to them: the web.</p>
         <ul class="basics--profiles">
@@ -47,58 +47,75 @@
     <main>
       <section class="skills">
         <header>
-          <h1 class="section-header">Skills</h1>
+          <h1 class="section-header">Skills and Proficiencies</h1>
         </header>
         <ul class="skill-categories">
           <li class="skill-category">
           Web Development (Advanced)
-            <ul class="skill-category--keywords">
-              <li class="skill-category--keyword skill-HTML5">
+            <ul class="skill-category--keywords keyword-list">
+              <li class="keyword skill-category--keyword skill-HTML5">
                 HTML5
               </li>
-              <li class="skill-category--keyword skill-CSS3">
+              <li class="keyword skill-category--keyword skill-CSS3">
                 CSS3
               </li>
-              <li class="skill-category--keyword skill-JavaScript">
+              <li class="keyword skill-category--keyword skill-JavaScript">
                 JavaScript
               </li>
-              <li class="skill-category--keyword skill-ES6">
+              <li class="keyword skill-category--keyword skill-ES6">
                 ES6
               </li>
-              <li class="skill-category--keyword skill-ES2015">
+              <li class="keyword skill-category--keyword skill-ES2015">
                 ES2015
               </li>
-              <li class="skill-category--keyword skill-React">
+              <li class="keyword skill-category--keyword skill-React">
                 React
               </li>
-              <li class="skill-category--keyword skill-Flux">
+              <li class="keyword skill-category--keyword skill-Flux">
                 Flux
               </li>
-              <li class="skill-category--keyword skill-Backbone.js">
+              <li class="keyword skill-category--keyword skill-Backbone.js">
                 Backbone.js
               </li>
-              <li class="skill-category--keyword skill-Knockout.js">
+              <li class="keyword skill-category--keyword skill-Knockout.js">
                 Knockout.js
               </li>
-              <li class="skill-category--keyword skill-Webpack">
+              <li class="keyword skill-category--keyword skill-Webpack">
                 Webpack
               </li>
-              <li class="skill-category--keyword skill-Grunt">
+              <li class="keyword skill-category--keyword skill-Grunt">
                 Grunt
               </li>
-              <li class="skill-category--keyword skill-Gulp">
+              <li class="keyword skill-category--keyword skill-Gulp">
                 Gulp
               </li>
             </ul>
           </li>
           <li class="skill-category">
           Architecture (Intermediate)
-            <ul class="skill-category--keywords">
-              <li class="skill-category--keyword skill-REST">
+            <ul class="skill-category--keywords keyword-list">
+              <li class="keyword skill-category--keyword skill-REST">
                 REST
               </li>
-              <li class="skill-category--keyword skill-Hypermedia">
+              <li class="keyword skill-category--keyword skill-Hypermedia">
                 Hypermedia
+              </li>
+            </ul>
+          </li>
+          <li class="skill-category">
+          Tools (Advanced)
+            <ul class="skill-category--keywords keyword-list">
+              <li class="keyword skill-category--keyword skill-Sublime Text">
+                Sublime Text
+              </li>
+              <li class="keyword skill-category--keyword skill-Git/GitHub">
+                Git/GitHub
+              </li>
+              <li class="keyword skill-category--keyword skill-Terminal">
+                Terminal
+              </li>
+              <li class="keyword skill-category--keyword skill-Chrome/DevTools">
+                Chrome/DevTools
               </li>
             </ul>
           </li>
@@ -106,28 +123,70 @@
       </section>
       <section class="work-history">
         <header>
-          <h1>Work History</h1>
+          <h1 class="section-header">Work History</h1>
         </header>
         <ul class="work-history--entries">
           <li class="work-history--entry">
-            <div class="work-history--entry-company">
-              <a href="http://piedpiper.com">Pied Piper</a>
-            </div>
-            <div class="work-history--entry-dates">From 2013-12-01 to 2014-12-01</div>
-            <div class="work-history--entry-position">CEO/President</div>
-            <ul class="work-history--entry-keywords">
-              <li class="work-history--entry-keyword keyword-JavaScript">JavaScript</li>
-              <li class="work-history--entry-keyword keyword-HTML5">HTML5</li>
-              <li class="work-history--entry-keyword keyword-CSS3">CSS3</li>
-              <li class="work-history--entry-keyword keyword-PostCSS">PostCSS</li>
-              <li class="work-history--entry-keyword keyword-Handlebars">Handlebars</li>
-              <li class="work-history--entry-keyword keyword-Gulp">Gulp</li>
+            <h3 class="work-history--entry-company-position">
+              <span class="work-history--entry-company-label">Company: </span>
+              <span class="work-history--entry-company">
+                  <a href="http://daveramsey.com">Lampo Group</a>
+              </span>
+              <span class="work-history--entry-position-label">Position/Title:</span>
+              <span class="work-history--entry-position">Senior JavaScript Engineer (contractor)</span>
+            </h3>
+            <h4 class="work-history--entry-dates">
+              <span class="work-history--entry-date-from-label">From</span>
+              <span class="work-history--entry-date-from">November 2014</span>
+              <span class="work-history--entry-date-to-label">to</span>
+              <span class="work-history--entry-date-to">Present</span>
+            </h4>
+            <ul class="keyword-list work-history--entry-keywords">
+              <li class="keyword work-history--entry-keyword keyword-JavaScript">JavaScript</li>
+              <li class="keyword work-history--entry-keyword keyword-HTML5">HTML5</li>
+              <li class="keyword work-history--entry-keyword keyword-CSS3">CSS3</li>
+              <li class="keyword work-history--entry-keyword keyword-SASS">SASS</li>
+              <li class="keyword work-history--entry-keyword keyword-React">React</li>
+              <li class="keyword work-history--entry-keyword keyword-Webpack">Webpack</li>
+              <li class="keyword work-history--entry-keyword keyword-Ruby on Rails">Ruby on Rails</li>
             </ul>
-            <p class="work-history--entry-summary">Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
+            <p class="work-history--entry-summary">Currently contracting for Ramsey Solutions as a front-end web developer helping build the SmartDollar site and application. We&#x27;re applying responsive design methodologies to make applications available in web browsers on any device.</p>
             <ul class="work-history--entry-highlights">
-              <li class="work-history--entry-highlight">Build an algorithm for artist to detect if their music was violating copy right infringement laws</li>
-              <li class="work-history--entry-highlight">Successfully won Techcrunch Disrupt</li>
-              <li class="work-history--entry-highlight">Optimized an algorithm that holds the current world record for Weisman Scores</li>
+              <li class="work-history--entry-highlight">Designed and implemented a solution for modular JavaScript for the SmartDollar application using vanilla JavaScript and namespacing</li>
+              <li class="work-history--entry-highlight">Designed and implemented a reporting application with React and my own implement of Flux using postal.js and the Chartist library for custom charts and graphs</li>
+            </ul>
+          </li>
+          <li class="work-history--entry">
+            <h3 class="work-history--entry-company-position">
+              <span class="work-history--entry-company-label">Company: </span>
+              <span class="work-history--entry-company">
+                  appendTo
+              </span>
+              <span class="work-history--entry-position-label">Position/Title:</span>
+              <span class="work-history--entry-position">Senior JavaScript Engineer and Team Lead</span>
+            </h3>
+            <h4 class="work-history--entry-dates">
+              <span class="work-history--entry-date-from-label">From</span>
+              <span class="work-history--entry-date-from">December 2012</span>
+              <span class="work-history--entry-date-to-label">to</span>
+              <span class="work-history--entry-date-to">October 2014</span>
+            </h4>
+            <ul class="keyword-list work-history--entry-keywords">
+              <li class="keyword work-history--entry-keyword keyword-JavaScript">JavaScript</li>
+              <li class="keyword work-history--entry-keyword keyword-HTML5">HTML5</li>
+              <li class="keyword work-history--entry-keyword keyword-CSS3">CSS3</li>
+              <li class="keyword work-history--entry-keyword keyword-SASS">SASS</li>
+              <li class="keyword work-history--entry-keyword keyword-Compass">Compass</li>
+              <li class="keyword work-history--entry-keyword keyword-Knockout.js">Knockout.js</li>
+              <li class="keyword work-history--entry-keyword keyword-Backbone.js">Backbone.js</li>
+              <li class="keyword work-history--entry-keyword keyword-Cordova">Cordova</li>
+            </ul>
+            <p class="work-history--entry-summary">Senior JavaScript Engineer and Team Lead in the Solutions Delivery group at appendTo.</p>
+            <ul class="work-history--entry-highlights">
+              <li class="work-history--entry-highlight">Built a large, complex single-page-application for an international client. The application made heavy use of KnockoutJS with numerous custom bindings and extensions, and custom developed modules to handle client-side routing, logging and other architectural concerns, as well as Twitter Bootstrap for UI layout (grid) and components.</li>
+              <li class="work-history--entry-highlight">JavaScript module development and migration as part of a responsive re-design of a client&#x27;s public web site and commerce application.</li>
+              <li class="work-history--entry-highlight">UX development (JavaScript (jQuery, Knockout.JS), HTML5 and CSS3) for a customer building a large-scale custom commerce application.</li>
+              <li class="work-history--entry-highlight">Built several native iPad applications using HTML5, CSS3 and JavaScript (jQuery, Backbone.js) with Cordova/PhoneGap.</li>
             </ul>
           </li>
         </ul>

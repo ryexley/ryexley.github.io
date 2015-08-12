@@ -1,6 +1,7 @@
 .basics--profiles {
   @mixin centered-list;
   text-shadow: none;
+  transform-style: preserve3d;
 
   li {
     transition: all 0.5s ease;
@@ -8,6 +9,8 @@
 }
 
 .basics--profile {
+  transform-style: preserve3d;
+
   &:hover {
     transform: rotate(360deg) scale(1.2);
     transition: all 0.5s ease;

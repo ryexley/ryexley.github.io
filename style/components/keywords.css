@@ -1,17 +1,4 @@
-.skills {
-  .section-header {
-    &::before {
-      content: "\f121";
-    }
-  }
-}
-
-.skill-categories {
-  @mixin unstyled-list;
-  margin: 1rem 0;
-}
-
-.skill-category--keywords {
+.keyword-list {
   @mixin floated-list;
   margin: 0.5rem;
 
@@ -20,10 +7,11 @@
   }
 }
 
-.skill-category--keyword {
+.keyword {
   background: $keywordBackgroundColor;
   border: 1px solid $strokeColor;
   border-radius: 1rem;
+  font-size: 0.75rem;
   margin: 0 0.5rem 0 0;
   padding: 0.25rem 0.75rem;
 }

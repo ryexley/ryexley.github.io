@@ -1,15 +1,29 @@
-$headerMinHeight: 27rem;
+$headerMinHeight: 32rem;
 $headerGradientStart: rgba(115, 64, 196,.95);
 $headerGradientStop: rgba(49, 142, 223,.95);
 
 header.main {
   @mixin centered;
   @mixin text-shadow;
-  background: linear-gradient(145deg, $headerGradientStart, $headerGradientStop);
+  background: transparent url("../../images/family-downtown-knoxville.jpg") no-repeat center center;
+  background-size: cover;
   color: #fff;
   margin: 0;
   padding: 1rem;
   position: relative;
+  transform-style: preserve3d;
+  z-index: 1;
+
+  &::before {
+    background: linear-gradient(145deg, $headerGradientStart, $headerGradientStop);
+    bottom: 0;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
 
   @mixin min-width $bp-desktop {
     height: 100vh;
@@ -24,6 +38,9 @@ header.main {
 }
 
 .main-header--content {
+  position: relative;
+  z-index: 3;
+
   @mixin min-width $bp-desktop {
     position: relative;
     top: 40%;
@@ -36,8 +53,53 @@ header.main {
   }
 }
 
+.basics--name {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.basics--label {
+  margin: 1rem;
+}
+
 .highlighted-technology-buttons {
   @mixin centered-list;
+
+  span {
+    display: none;
+  }
+
+  .button {
+    background-color: rgba(50, 50, 50, 0.75);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 2.25rem !important;
+    border-radius: 3px;
+    height: 3.5rem;
+    padding: 0.5rem;
+    width: 3.5rem;
+  }
+
+  .button-js {
+    background-image: url("../../images/js.png");
+  }
+
+  .button-html5 {
+    background-image: url("../../images/html5.png");
+  }
+
+  .button-css3 {
+    background-image: url("../../images/css3.png");
+  }
+
+  .button-html5,
+  .button-css3 {
+    background-position-y: 57% !important;
+  }
+
+  .button-nodejs {
+    background-image: url("../../images/node-js.png");
+  }
 }
 
 .basics--contact-details {

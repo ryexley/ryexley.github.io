@@ -1,22 +1,31 @@
 <section class="work-history">
   <header>
-    <h1>Work History</h1>
+    <h1 class="section-header">Work History</h1>
   </header>
   <ul class="work-history--entries">
   {{#each data}}
     <li class="work-history--entry">
-      <div class="work-history--entry-company">
-      {{#if website}}
-        <a href="{{website}}">{{company}}</a>
-      {{else}}
-        {{company}}
-      {{/if}}
-      </div>
-      <div class="work-history--entry-dates">From {{startDate}} to {{endDate}}</div>
-      <div class="work-history--entry-position">{{position}}</div>
-      <ul class="work-history--entry-keywords">
+      <h3 class="work-history--entry-company-position">
+        <span class="work-history--entry-company-label">Company: </span>
+        <span class="work-history--entry-company">
+          {{#if website}}
+            <a href="{{website}}">{{company}}</a>
+          {{else}}
+            {{company}}
+          {{/if}}
+        </span>
+        <span class="work-history--entry-position-label">Position/Title:</span>
+        <span class="work-history--entry-position">{{position}}</span>
+      </h3>
+      <h4 class="work-history--entry-dates">
+        <span class="work-history--entry-date-from-label">From</span>
+        <span class="work-history--entry-date-from">{{startDate}}</span>
+        <span class="work-history--entry-date-to-label">to</span>
+        <span class="work-history--entry-date-to">{{endDate}}</span>
+      </h4>
+      <ul class="keyword-list work-history--entry-keywords">
       {{#each keywords}}
-        <li class="work-history--entry-keyword keyword-{{this}}">{{this}}</li>
+        <li class="keyword work-history--entry-keyword keyword-{{this}}">{{this}}</li>
       {{/each}}
       </ul>
       <p class="work-history--entry-summary">{{summary}}</p>

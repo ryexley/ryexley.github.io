@@ -29,17 +29,31 @@
   },
   "work": [
     {
-      "company": "Pied Piper",
-      "position": "CEO/President",
-      "website": "http://piedpiper.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "keywords": ["JavaScript", "HTML5", "CSS3", "PostCSS", "Handlebars", "Gulp"],
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "company": "Lampo Group",
+      "position": "Senior JavaScript Engineer (contractor)",
+      "website": "http://daveramsey.com",
+      "startDate": "November 2014",
+      "endDate": "Present",
+      "keywords": ["JavaScript", "HTML5", "CSS3", "SASS", "React", "Webpack", "Ruby on Rails"],
+      "summary": "Currently contracting for Ramsey Solutions as a front-end web developer helping build the SmartDollar site and application. We're applying responsive design methodologies to make applications available in web browsers on any device.",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Designed and implemented a solution for modular JavaScript for the SmartDollar application using vanilla JavaScript and namespacing",
+        "Designed and implemented a reporting application with React and my own implement of Flux using postal.js and the Chartist library for custom charts and graphs"
+      ]
+    },
+    {
+      "company": "appendTo",
+      "position": "Senior JavaScript Engineer and Team Lead",
+      "website": "",
+      "startDate": "December 2012",
+      "endDate": "October 2014",
+      "keywords": ["JavaScript", "HTML5", "CSS3", "SASS", "Compass", "Knockout.js", "Backbone.js", "Cordova"],
+      "summary": "Senior JavaScript Engineer and Team Lead in the Solutions Delivery group at appendTo.",
+      "highlights": [
+        "Built a large, complex single-page-application for an international client. The application made heavy use of KnockoutJS with numerous custom bindings and extensions, and custom developed modules to handle client-side routing, logging and other architectural concerns, as well as Twitter Bootstrap for UI layout (grid) and components.",
+        "JavaScript module development and migration as part of a responsive re-design of a client's public web site and commerce application.",
+        "UX development (JavaScript (jQuery, Knockout.JS), HTML5 and CSS3) for a customer building a large-scale custom commerce application.",
+        "Built several native iPad applications using HTML5, CSS3 and JavaScript (jQuery, Backbone.js) with Cordova/PhoneGap."
       ]
     }
   ],
@@ -113,6 +127,16 @@
         "REST",
         "Hypermedia"
       ]
+    },
+    {
+      "name": "Tools",
+      "level": "Advanced",
+      "keywords": [
+        "Sublime Text",
+        "Git/GitHub",
+        "Terminal",
+        "Chrome/DevTools"
+      ]
     }
   ],
   "languages": [
@@ -132,8 +156,8 @@
   ],
   "references": [
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+      "name": "",
+      "reference": ""
     }
   ]
 }

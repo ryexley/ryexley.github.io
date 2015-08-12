@@ -1,14 +1,14 @@
 <section class="skills">
   <header>
-    <h1 class="section-header">Skills</h1>
+    <h1 class="section-header">Skills and Proficiencies</h1>
   </header>
   <ul class="skill-categories">
   {{#each data}}
     <li class="skill-category">
     {{name}} ({{level}})
-      <ul class="skill-category--keywords">
+      <ul class="skill-category--keywords keyword-list">
       {{#each keywords}}
-        <li class="skill-category--keyword skill-{{this}}">
+        <li class="keyword skill-category--keyword skill-{{this}}">
           {{this}}
         </li>
       {{/each}}

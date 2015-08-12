@@ -1,5 +1,41 @@
-.work-history {}
+.work-history {
+  .section-header {
+    &::before {
+      content: "\f1da";
+    }
+  }
+}
+
+.work-history--entries {
+  @mixin unstyled-list;
+  margin: 1rem 0;
+}
+
+.work-history--entry {
+  border-bottom: 1px solid $strokeColor;
+  margin: 1rem 0;
+  padding-bottom: 2rem;
+}
+
+.work-history--entry-company-position {
+  margin: 0.5rem 0;
+}
+
+.work-history--entry-dates {
+  margin: 0.25rem 0;
+}
 
 .work-history--entry-keywords {
   @mixin floated-list;
+}
+
+.work-history--entry-company-label,
+.work-history--entry-position-label,
+.work-history--entry-date-from-label,
+.work-history--entry-date-to-label {
+  color: $strokeColor;
+}
+
+.work-history--entry-company {
+  margin-right: 2rem;
 }

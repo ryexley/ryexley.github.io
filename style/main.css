@@ -15,6 +15,10 @@ main {
     margin: 0 auto;
     width: $bp-desktop;
   }
+
+  section {
+    margin: 1rem 0;
+  }
 }
 
 .section-header {
