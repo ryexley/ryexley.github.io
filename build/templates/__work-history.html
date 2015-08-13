@@ -29,11 +29,13 @@
       {{/each}}
       </ul>
       <p class="work-history--entry-summary">{{summary}}</p>
+      {{#if highlights.length}}
       <ul class="work-history--entry-highlights">
       {{#each highlights}}
         <li class="work-history--entry-highlight">{{this}}</li>
       {{/each}}
       </ul>
+      {{/if}}
     </li>
   {{/each}}
   </ul>

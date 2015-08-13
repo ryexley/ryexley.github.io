@@ -12,13 +12,13 @@
   transform-style: preserve3d;
 
   &:hover {
-    transform: rotate(360deg) scale(1.2);
+    transform: rotate(360deg) scale(1.5);
     transition: all 0.5s ease;
   }
 
   a {
     @mixin text-shadow;
-    color: #fff;
+    color: $strokeColor;
     font-family: FontAwesome;
     font-size: 2rem;
     margin: 0 0.5rem;
@@ -26,7 +26,7 @@
     transition: all 0.5s ease;
 
     &:hover {
-      color: $strokeColor;
+      color: #fff;
     }
 
     span {

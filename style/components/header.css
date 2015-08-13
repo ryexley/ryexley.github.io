@@ -62,6 +62,11 @@ header.main {
   margin: 1rem;
 }
 
+.basics--summary {
+  margin: 1rem 0.5rem;
+  text-align: left;
+}
+
 .highlighted-technology-buttons {
   @mixin centered-list;
 
@@ -104,4 +109,56 @@ header.main {
 
 .basics--contact-details {
   display: none;
+}
+
+.scroll-down-indicator {
+  animation: bounce 4s 2s infinite;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  bottom: 0.5rem;
+  color: $strokeColor;
+  display: none;
+  font-family: FontAwesome;
+  font-size: 2rem;
+  height: 3rem;
+  left: 50%;
+  margin-left: -1.5rem;
+  position: absolute;
+  text-align: center;
+  width: 3rem;
+  z-index: 4;
+  transition: all 0.5s ease;
+
+  span {
+    display: none;
+  }
+
+  &:hover {
+    border: 1px solid $strokeColor;
+    color: #fff;
+  }
+
+  &::before {
+    content: "\f107";
+    display: inline-block;
+    height: 3rem;
+    padding: 0.5rem;
+    width: 3rem;
+  }
+
+  @mixin min-width $bp-desktop {
+    display: inline-block;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-7px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
 }
