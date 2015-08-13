@@ -2,3 +2,14 @@
   box-sizing: border-box;
 }
 
+.is-hidden {
+  max-height: 0;
+  transform: scaleY(0);
+  transition: all 0.5s ease;
+}
+
+.is-visible {
+  max-height: auto;
+  transform: scaleY(1);
+  transition: all 0.5s ease;
+}

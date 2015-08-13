@@ -9,7 +9,7 @@ body {
 }
 
 main {
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
 
   @mixin min-width $bp-desktop {
     margin: 0 auto;

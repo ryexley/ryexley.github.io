@@ -1,0 +1,13 @@
+<div class="contact-details-toggle" data-toggle="#contact-details">Click to see contact info</div>
+<section id="contact-details" class="contact-details hide">
+  <header>
+    <h1 class="section-header">Contact Information</h1>
+    <div class="contact-details--email">{{data.email}}</div>
+    <div class="contact-details--website">{{data.website}}</div>
+    <div class="contact-details--phone">{{data.phone}}</div>
+    <div class="contact-details--address">
+      <div class="contact-details--address--line1">{{data.location.address}}</div>
+      <div class="contact-details--address--line2">{{data.location.city}}, {{data.location.countryCode}} {{data.location.postalCode}}</div>
+    </div>
+  </header>
+</section>
