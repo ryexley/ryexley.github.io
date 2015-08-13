@@ -4,7 +4,14 @@
 
     init: function () {
       this.registerEvents();
+      this.initWorkHistory();
       this.hideElements();
+    },
+
+    initWorkHistory: function () {
+      var $oldWorkHistoryBodies = $(".work-history--entry:nth-child(n+4) .work-history--body");
+
+      $oldWorkHistoryBodies.addClass("hide");
     },
 
     registerEvents: function () {
@@ -37,10 +44,10 @@
 
       if ($elementsToHide.length) {
         $elementsToHide.each(function (index, el) {
-          var $el = $(el);
-          $el.attr("data-height", $el.outerHeight());
-          $el.css({ height: 0, opacity: 0 });
-          $el.addClass("is-hidden");
+          var $el = $(el),
+              $toggle = $("<div>").addClass("toggle is-hidden").attr("data-height", $el.outerHeight());
+
+          $el.removeClass("hide").wrap($toggle);
         });
       }
     },
@@ -54,25 +61,20 @@
         $target = target;
       }
 
+      $target = $target.closest(".toggle");
+
       isVisible = !($target.hasClass("is-hidden"));
       if (isVisible) {
-        $target.css({
-          transition: "all .5s ease",
-          height: 0,
-          opacity: 0,
-          transform: "scaleY(0)"
-        });
-        $target.removeClass("is-visible").addClass("is-hidden");
+        $target.addClass("is-hidden").removeAttr("style");
       } else {
         var targetHeight = $target.attr("data-height");
 
         $target.css({
-          transition: "all .5s ease",
           height: targetHeight,
-          opacity: 1,
-          transform: "scaleY(1)"
+          opacity: 1
         });
-        $target.removeClass("is-hidden").addClass("is-visible");
+
+        $target.removeClass("is-hidden");
       }
     },
 

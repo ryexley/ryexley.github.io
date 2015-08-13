@@ -27,6 +27,11 @@
 
 .work-history--entry-keywords {
   @mixin floated-list;
+  margin: 0;
+
+  li {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+  }
 }
 
 .work-history--entry-company-label,

@@ -2,14 +2,13 @@
   box-sizing: border-box;
 }
 
-.is-hidden {
-  max-height: 0;
-  transform: scaleY(0);
+.toggle {
   transition: all 0.5s ease;
+  transform-style: preserve3d;
 }
 
-.is-visible {
-  max-height: auto;
-  transform: scaleY(1);
-  transition: all 0.5s ease;
+.is-hidden {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
 }

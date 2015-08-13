@@ -53,9 +53,16 @@ var buildApi = {
     });
   },
 
+  enhanceResumeData: function (data) {
+    // TODO: massage this data...specifically, the work history data to include featured entry count and stuff like that
+    return data;
+  },
+
   generate: function (options) {
     options = options || {};
     var self = this;
+
+    options.data = this.enhanceResumeData(options.data);
 
     this.registerPartials(function () {
       self.getTemplate(function (templateSource) {
