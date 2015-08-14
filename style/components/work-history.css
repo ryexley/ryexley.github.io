@@ -6,7 +6,8 @@
   }
 }
 
-.work-history--entries {
+.work-history--featured-list,
+.work-history--older-list {
   @mixin unstyled-list;
   margin: 1rem 0;
 }

@@ -26,6 +26,7 @@
     "gulp": "^3.9.0",
     "gulp-postcss": "^5.1.10",
     "handlebars": "^3.0.3",
+    "lodash": "^3.10.1",
     "normalize.css": "^3.0.3",
     "postcss": "^4.1.16",
     "postcss-import": "^6.2.0",

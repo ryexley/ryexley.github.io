@@ -4,7 +4,7 @@
 
     init: function () {
       this.registerEvents();
-      this.initWorkHistory();
+      // this.initWorkHistory();
       this.hideElements();
     },
 

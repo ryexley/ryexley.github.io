@@ -1,48 +1,10 @@
 var path = require("path");
 var fs = require("fs");
+var _ = require("lodash");
 var rimraf = require("rimraf");
-var Handlebars = require("handlebars");
+var Templates = require("./templates");
 
 var buildApi = {
-  getTemplate: function (next) {
-    var templatePath = path.resolve(__dirname, "templates/resume-template.html");
-
-    fs.readFile(templatePath, "utf-8", function (err, contents) {
-      if (err) {
-        return next(err);
-      }
-
-      next(contents);
-    });
-  },
-
-  registerPartials: function (next) {
-    var templatePath = path.resolve(__dirname, "templates"),
-        templates = fs.readdirSync(templatePath);
-
-    templates.forEach(function (template) {
-      var extension = path.extname(template),
-          firstTwo = template.substr(0, 2),
-          partialName = template.substr(2, (template.lastIndexOf(".") -2));
-
-      if (extension === ".html") {
-        if (firstTwo === "__") {
-          var partialFilepath = path.resolve(__dirname, "templates", template);
-          fs.readFile(partialFilepath, "utf-8", function (err, partialContent) {
-            if (err) {
-              console.log("ERROR registering partial:", partialFilepath, err);
-              return next(err);
-            }
-
-            Handlebars.registerPartial(partialName, partialContent);
-          });
-        }
-      }
-    });
-
-    next();
-  },
-
   writeGeneratedResume: function (filepath, contents, next) {
     fs.writeFile(filepath, contents, function (err) {
       if (err) {
@@ -54,7 +16,13 @@ var buildApi = {
   },
 
   enhanceResumeData: function (data) {
-    // TODO: massage this data...specifically, the work history data to include featured entry count and stuff like that
+    data = _.merge({}, data, {
+      work: {
+        featuredEntryCount: 3,
+        history: data.work
+      }
+    });
+
     return data;
   },
 
@@ -64,9 +32,9 @@ var buildApi = {
 
     options.data = this.enhanceResumeData(options.data);
 
-    this.registerPartials(function () {
-      self.getTemplate(function (templateSource) {
-        var template = Handlebars.compile(templateSource),
+    Templates.init(function () {
+      Templates.getMain(function (templateSource) {
+        var template = Templates.compile(templateSource),
             resumeSource = template(options.data),
             targetFolder = path.resolve(__dirname, "../view/"),
             outputFile = options.outputFile || path.resolve(__dirname, "../view/index.html");
