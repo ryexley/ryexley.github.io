@@ -1,8 +1,5 @@
 .contact-details-toggle {
-  cursor: pointer;
-  font-size: 0.7rem;
-  padding: 0.25rem;
-  text-align: center;
+  @mixin toggle-trigger;
 }
 
 .contact-details {

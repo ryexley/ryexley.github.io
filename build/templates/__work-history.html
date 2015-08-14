@@ -6,16 +6,26 @@
     <ul class="work-history--featured-list">
     {{#each data.history}}
       {{#compare @index "<" ../data.featuredEntryCount}}
+        <li class="work-history--entry">
         {{> work-history-entry data=this}}
+        </li>
       {{/compare}}
     {{/each}}
     </ul>
   </div>
+  <div class="older-work-history-toggle">More work history <i class="fa fa-angle-down"></i></div>
   <div class="work-history--older">
     <ul class="work-history--older-list">
     {{#each data.history}}
       {{#compare @index ">=" ../data.featuredEntryCount}}
-        {{> work-history-entry data=this}}
+        <li class="work-history--entry">
+          <div class="older-work-history--entry--toggle" data-toggle=".older-work-history--entry">
+            {{company}} // {{position}} // From {{startDate}} to {{endDate}} <i class="fa fa-angle-down"></i>
+          </div>
+          <div class="older-work-history--entry hide">
+            {{> work-history-entry data=this}}
+          </div>
+        </li>
       {{/compare}}
     {{/each}}
     </ul>

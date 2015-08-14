@@ -4,20 +4,13 @@
 
     init: function () {
       this.registerEvents();
-      // this.initWorkHistory();
       this.hideElements();
-    },
-
-    initWorkHistory: function () {
-      var $oldWorkHistoryBodies = $(".work-history--entry:nth-child(n+4) .work-history--body");
-
-      $oldWorkHistoryBodies.addClass("hide");
     },
 
     registerEvents: function () {
       var $document = $(document);
       $document.on("click", "a[href*=#]:not([href=#])", this.slideToPageLink);
-      $document.on("click", ".contact-details-toggle", this.toggleContactDetails.bind(this));
+      $document.on("click", "[data-toggle]", this.onToggleClick.bind(this));
     },
 
     // adapted from https://css-tricks.com/snippets/jquery/smooth-scrolling/
@@ -39,6 +32,24 @@
       }
     },
 
+    slideTo: function (options) {
+      options = options || {};
+
+      var $target, top,
+          offsetBuffer = options.offsetBuffer || 10;
+
+      if (options.target) {
+        if (!(options.target instanceof jQuery)) {
+          $target = $(options.target);
+        } else {
+          $target = options.target;
+        }
+
+        top = $target.offset().top;
+        $("html, body").animate({ scrollTop: (top - offsetBuffer) });
+      }
+    },
+
     hideElements: function () {
       var $elementsToHide = $(".hide");
 
@@ -52,8 +63,23 @@
       }
     },
 
-    toggleEl: function (target) {
-      var $target, isVisible;
+    onToggleClick: function (e) {
+      if (e) {
+        var $trigger = $(e.currentTarget),
+            $target = $trigger.parent().find($trigger.attr("data-toggle"));
+
+        this.toggleEl($trigger, $target);
+      }
+    },
+
+    toggleEl: function (trigger, target) {
+      var $trigger, $toggleIndicator, $target, isVisible;
+
+      if (!(trigger instanceof jQuery)) {
+        $trigger = $(trigger);
+      } else {
+        $trigger = trigger;
+      }
 
       if (!(target instanceof jQuery)) {
         $target = $(target);
@@ -62,9 +88,11 @@
       }
 
       $target = $target.closest(".toggle");
+      $toggleIndicator = $trigger.find("i");
 
       isVisible = !($target.hasClass("is-hidden"));
       if (isVisible) {
+        $toggleIndicator.removeClass("fa-angle-up").addClass("fa-angle-down");
         $target.addClass("is-hidden").removeAttr("style");
       } else {
         var targetHeight = $target.attr("data-height");
@@ -74,17 +102,8 @@
           opacity: 1
         });
 
+        $toggleIndicator.removeClass("fa-angle-down").addClass("fa-angle-up");
         $target.removeClass("is-hidden");
-      }
-    },
-
-    toggleContactDetails: function (e) {
-      var $trigger, $target;
-
-      if (e) {
-        $trigger = $(e.currentTarget);
-        $target = $trigger.attr("data-toggle");
-        this.toggleEl($target);
       }
     }
 

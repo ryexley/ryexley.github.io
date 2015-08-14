@@ -12,13 +12,18 @@
   margin: 1rem 0;
 }
 
-.work-history--entry {
+.work-history--entry {}
+
+.work-history--summary {}
+
+.work-history--body {
   border-bottom: 1px solid $strokeColor;
-  margin: 1rem 0;
-  padding-bottom: 2rem;
+  margin: 0 0 1rem 0;
+  padding: 0 0 1rem 0;
 }
 
-.work-history--entry-company-position {
+.work-history--entry-company,
+.work-history--entry-position {
   margin: 0.5rem 0;
 }
 
@@ -44,4 +49,11 @@
 
 .work-history--entry-company {
   margin-right: 2rem;
+}
+
+.older-work-history--entry--toggle {
+  @mixin toggle-trigger;
+  margin: 0.5rem 0;
+  padding: 0;
+  text-align: left;
 }
