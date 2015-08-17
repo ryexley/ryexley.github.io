@@ -181,15 +181,43 @@
       "summary": "There is no spoon."
     }
   ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
-    }
-  ],
+  "publications": [{
+    "name": "Modern Web Practices",
+    "publisher": "Leanpub",
+    "releaseDate": "11/01/2014",
+    "website": "https://leanpub.com/modernwebpractices",
+    "summary": "A book on modern web practices that I contributed a chapter to."
+  }, {
+    "name": "Managing your Ajax server requests with Sycamore",
+    "publisher": "Me",
+    "releaseDate": "01/06/2014",
+    "website": "http://bob.yexley.net/manage-your-ajax-server-requests-with-sycamore/",
+    "summary": "A detailed introduction and overview of using the Sycamore mixin that I wrote, which can be found on my GitHub profile."
+  }, {
+    "name": "Iterating over JavaScript objects",
+    "publisher": "Me",
+    "releaseDate": "12/18/2013",
+    "website": "http://bob.yexley.net/iterating-over-javascript-objects/",
+    "summary": "An article on the utility of being able to iterate over JavaScript object literals that demonstrates various methods and their pros and cons."
+  }, {
+    "name": "UMD: JavaScript modules that run anywhere",
+    "publisher": "Me",
+    "releaseDate": "12/02/2013",
+    "website": "http://bob.yexley.net/umd-javascript-that-runs-anywhere/",
+    "summary": "An article I wrote on how and why to use Universal Module Definition for JavaScript modules that can be used in the browser, in a node.js app, and with any kind of module loader (AMD or CommonJS)."
+  }, {
+    "name": "The software development conundrum: estimation",
+    "publisher": "Me",
+    "releaseDate": "11/21/2013",
+    "website": "http://bob.yexley.net/the-software-development-conundrum-estimation/",
+    "summary": "A detailed article on the challenges of estimation in software development."
+  }, {
+    "name": "DRY JavaScript with mixins",
+    "publisher": "Me",
+    "releaseDate": "11/04/2013",
+    "website": "http://bob.yexley.net/dry-javascript-with-mixins/",
+    "summary": "An article on the power and value of mixins in JavaScript, with use cases and code samples."
+  }],
   "skills": [
     {
       "name": "Web Development",
@@ -216,6 +244,7 @@
         "REST",
         "Hypermedia",
         "node.js",
+        "ExpressJS",
         "SQL",
         "NoSQL"
       ]
@@ -238,15 +267,33 @@
       "fluency": "Native speaker"
     }
   ],
-  "interests": [
-    {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }
-  ],
+  "interests": [{
+    "name": "The Great Outdoors",
+    "keywords": [
+      "Hunting",
+      "Fishing",
+      "Camping",
+      "Boating",
+      "Hiking"
+    ]
+  }, {
+    "name": "Sports",
+    "keywords": [
+      "Football",
+      "Basketball",
+      "Golf"
+    ]
+  }, {
+    "name": "Reading",
+    "keywords": [
+      "The Bible",
+      "Science Fiction",
+      "Fantasy",
+      "Techno-thriller/Spy fiction",
+      "Westerns",
+      "Military"
+    ]
+  }],
   "references": [
     {
       "name": "",

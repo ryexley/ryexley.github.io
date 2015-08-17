@@ -1,1 +1,21 @@
-.interests {}
+.interests {
+  .section-header {
+    &::before {
+      content: "\f118";
+    }
+  }
+}
+
+.interests--categories {
+  @mixin unstyled-list;
+  margin: 1rem 0;
+}
+
+.interest-category--keywords {
+  @mixin floated-list;
+  margin: 0.5rem 0 !important;
+
+  li {
+    margin: 0.25rem 0.5rem 0.25rem 0;
+  }
+}

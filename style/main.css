@@ -39,6 +39,10 @@ main {
   }
 }
 
+.main-section {
+  margin-bottom: 3rem;
+}
+
 .section-header {
   border-bottom: 1px solid $strokeColor;
   color: $sectionHeaderColor;

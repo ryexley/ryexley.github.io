@@ -40,7 +40,7 @@
     </header>
     <main id="main-content">
       <div class="contact-details-toggle" data-toggle="#contact-details">Contact info <i class="fa fa-angle-down"></i></div>
-      <section id="contact-details" class="contact-details hide">
+      <section id="contact-details" class="main-section contact-details hide">
         <h1 class="section-header">Contact Information</h1>
         <div class="contact-details--content">
           <div class="contact-detail contact-details--email">bob@yexley.net</div>
@@ -49,13 +49,13 @@
           <div class="contact-detail contact-details--location">Knoxville, TN</div>
         </div>
       </section>
-      <section id="skills" class="skills">
+      <section id="skills" class="main-section skills">
         <header>
           <h1 class="section-header">Skills and Proficiencies</h1>
         </header>
         <ul class="skill-categories">
           <li class="skill-category">
-          Web Development (Advanced)
+          <h4>Web Development (Advanced)</h4>
             <ul class="skill-category--keywords keyword-list">
               <li class="keyword skill-category--keyword keyword-JavaScript">
                 JavaScript
@@ -96,7 +96,7 @@
             </ul>
           </li>
           <li class="skill-category">
-          Architecture and Backend (Intermediate)
+          <h4>Architecture and Backend (Intermediate)</h4>
             <ul class="skill-category--keywords keyword-list">
               <li class="keyword skill-category--keyword keyword-REST">
                 REST
@@ -107,6 +107,9 @@
               <li class="keyword skill-category--keyword keyword-nodejs">
                 node.js
               </li>
+              <li class="keyword skill-category--keyword keyword-ExpressJS">
+                ExpressJS
+              </li>
               <li class="keyword skill-category--keyword keyword-SQL">
                 SQL
               </li>
@@ -116,7 +119,7 @@
             </ul>
           </li>
           <li class="skill-category">
-          Tools (Advanced)
+          <h4>Tools (Advanced)</h4>
             <ul class="skill-category--keywords keyword-list">
               <li class="keyword skill-category--keyword keyword-Sublime Text">
                 Sublime Text
@@ -137,7 +140,7 @@
           </li>
         </ul>
       </section>
-      <section id="work-history" class="work-history">
+      <section id="work-history" class="main-section work-history">
         <header>
           <h1 class="section-header">Work History</h1>
         </header>
@@ -247,7 +250,7 @@
               </li>
           </ul>
         </div>
-        <div class="older-work-history-toggle">More work history <i class="fa fa-angle-down"></i></div>
+        <h4 class="older-work-history-header">More work history</h4>
         <div class="work-history--older">
           <ul class="work-history--older-list">
               <li class="work-history--entry">
@@ -468,7 +471,7 @@
           </ul>
         </div>
       </section>
-      <section id="open-source" class="open-source">
+      <section id="open-source" class="main-section open-source">
         <header>
           <h1 class="section-header">Open Source / Code</h1>
         </header>
@@ -486,11 +489,122 @@
             </h3>
             <p>A JavaScript mixin that extends a module with postal.js messaging functionality. Supports both publishing and subscribing functions, as well as a simple messages and subscriptions configuration syntax.</p>
           </li>
+          <li class="open-source--entry">
+            <h3 class="open-source--entry-name">
+              <a href="https://github.com/ryexley">Various others</a>
+            </h3>
+            <p>I have a number of others in various states of relevancy and completion. Some are no longer in use or are outdated by now, and others are the product of learning new tools and techniques, and never really got completely &quot;finished.&quot; You know how it goes, right? ;-) Feel free to poke around in them anyway.</p>
+          </li>
         </ul>
       </section>
-      <section class="publications">
+      <section id="publications" class="main-section publications">
+        <header>
+          <h1 class="section-header">Publications / Writings</h1>
+        </header>
+        <p>Some things I've written...</p>
+        <ul class="publications-list">
+          <li class="publications--entry">
+            <h3 class="publication--entry-name">
+              <a href="">Modern Web Practices</a>
+            </h3>
+            <p>A book on modern web practices that I contributed a chapter to.</p>
+          </li>
+          <li class="publications--entry">
+            <h3 class="publication--entry-name">
+              <a href="">Managing your Ajax server requests with Sycamore</a>
+            </h3>
+            <p>A detailed introduction and overview of using the Sycamore mixin that I wrote, which can be found on my GitHub profile.</p>
+          </li>
+          <li class="publications--entry">
+            <h3 class="publication--entry-name">
+              <a href="">Iterating over JavaScript objects</a>
+            </h3>
+            <p>An article on the utility of being able to iterate over JavaScript object literals that demonstrates various methods and their pros and cons.</p>
+          </li>
+          <li class="publications--entry">
+            <h3 class="publication--entry-name">
+              <a href="">UMD: JavaScript modules that run anywhere</a>
+            </h3>
+            <p>An article I wrote on how and why to use Universal Module Definition for JavaScript modules that can be used in the browser, in a node.js app, and with any kind of module loader (AMD or CommonJS).</p>
+          </li>
+          <li class="publications--entry">
+            <h3 class="publication--entry-name">
+              <a href="">The software development conundrum: estimation</a>
+            </h3>
+            <p>A detailed article on the challenges of estimation in software development.</p>
+          </li>
+          <li class="publications--entry">
+            <h3 class="publication--entry-name">
+              <a href="">DRY JavaScript with mixins</a>
+            </h3>
+            <p>An article on the power and value of mixins in JavaScript, with use cases and code samples.</p>
+          </li>
+        </ul>
       </section>
-      <section class="interests">
+      <section id="interests" class="main-section interests">
+        <header>
+          <h1 class="section-header">Personal Interests</h1>
+        </header>
+        <p>While my favorite things in life are growing old with my wife, and watching and helping my sons grow up, these are a few other things I enjoy when I have the time.</p>
+        <ul class="interests--categories">
+          <li class="interest-category">
+            <h4>The Great Outdoors</h4>
+            <ul class="interest-category--keywords keyword-list">
+              <li class="keyword interest-category--keyword keyword-Hunting">
+                Hunting
+              </li>
+              <li class="keyword interest-category--keyword keyword-Fishing">
+                Fishing
+              </li>
+              <li class="keyword interest-category--keyword keyword-Camping">
+                Camping
+              </li>
+              <li class="keyword interest-category--keyword keyword-Boating">
+                Boating
+              </li>
+              <li class="keyword interest-category--keyword keyword-Hiking">
+                Hiking
+              </li>
+            </ul>
+          </li>
+          <li class="interest-category">
+            <h4>Sports</h4>
+            <ul class="interest-category--keywords keyword-list">
+              <li class="keyword interest-category--keyword keyword-Football">
+                Football
+              </li>
+              <li class="keyword interest-category--keyword keyword-Basketball">
+                Basketball
+              </li>
+              <li class="keyword interest-category--keyword keyword-Golf">
+                Golf
+              </li>
+            </ul>
+          </li>
+          <li class="interest-category">
+            <h4>Reading</h4>
+            <ul class="interest-category--keywords keyword-list">
+              <li class="keyword interest-category--keyword keyword-The Bible">
+                The Bible
+              </li>
+              <li class="keyword interest-category--keyword keyword-Science Fiction">
+                Science Fiction
+              </li>
+              <li class="keyword interest-category--keyword keyword-Fantasy">
+                Fantasy
+              </li>
+              <li class="keyword interest-category--keyword keyword-Techno-thriller/Spy fiction">
+                Techno-thriller/Spy fiction
+              </li>
+              <li class="keyword interest-category--keyword keyword-Westerns">
+                Westerns
+              </li>
+              <li class="keyword interest-category--keyword keyword-Military">
+                Military
+              </li>
+            </ul>
+          </li>
+        </ul>
       </section>
     </main>
     <!-- Scripts -->

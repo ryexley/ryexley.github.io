@@ -7,5 +7,10 @@
     "projectName": "Sumac",
     "url": "https://github.com/ryexley/sumac",
     "description": "A JavaScript mixin that extends a module with postal.js messaging functionality. Supports both publishing and subscribing functions, as well as a simple messages and subscriptions configuration syntax."
-  }]
+  }, {
+    "projectName": "Various others",
+    "url": "https://github.com/ryexley",
+    "description": "I have a number of others in various states of relevancy and completion. Some are no longer in use or are outdated by now, and others are the product of learning new tools and techniques, and never really got completely \"finished.\" You know how it goes, right? ;-) Feel free to poke around in them anyway."
+  }],
+  "background": "After graduating from high school, I served for eleven years in the U.S. Air Force: the first six years as a Munitions Systems Specialist and the last five years as a Communications Computer System Programmer. Some of the assignments I served at included George Air Force Base (AFB) in southeastern California, Spangdahlem Air Base (AB), Germany, Prince Sultan AB, Saudi Arabia and Davis Monthan AFB in Tucson, Arizona and Wright-Patterson AFB in Dayton, Ohio. I separated from the Air Force in December of 2001 and have worked as a software developer ever since."
 }

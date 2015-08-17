@@ -1,2 +1,20 @@
-<section class="publications">
+<section id="publications" class="main-section publications">
+  <header>
+    <h1 class="section-header">Publications / Writings</h1>
+  </header>
+  <p>Some things I've written...</p>
+  <ul class="publications-list">
+  {{#each data}}
+    <li class="publications--entry">
+      <h3 class="publication--entry-name">
+      {{#if website}}
+        <a href="{{url}}">{{name}}</a>
+      {{else}}
+        {{name}}
+      {{/if}}
+      </h3>
+      <p>{{summary}}</p>
+    </li>
+  {{/each}}
+  </ul>
 </section>

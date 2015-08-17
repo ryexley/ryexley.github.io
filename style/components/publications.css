@@ -1,1 +1,12 @@
-.publications {}
+.publications {
+  .section-header {
+    &::before {
+      content: "\f044";
+    }
+  }
+}
+
+.publications-list {
+  @mixin unstyled-list;
+  margin: 1rem 0;
+}
