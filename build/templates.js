@@ -82,6 +82,11 @@ function registerHelpers (next) {
     return JSON.stringify(target, null, 2);
   });
 
+  // #stripChars
+  Handlebars.registerHelper("stripChars", function (target) {
+    return target.replace(".", "");
+  });
+
   next();
 };
 

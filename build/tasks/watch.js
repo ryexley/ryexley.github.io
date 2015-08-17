@@ -7,5 +7,5 @@ function r (target) {
 
 gulp.task("watch", function () {
   gulp.watch([r("style/**/*.css")], ["css"]);
-  gulp.watch([r("resume.json"), r("build/templates/**/*.html"), r("view/**/*.js")], ["generate-resume-html"]);
+  gulp.watch([r("resume.json"), r("resume.enhancements.json"), r("build/templates/**/*.html"), r("view/**/*.js")], ["generate-resume-html"]);
 });

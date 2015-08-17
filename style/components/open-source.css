@@ -1,0 +1,12 @@
+.open-source {
+  .section-header {
+    &::before {
+      content: "\f126";
+    }
+  }
+}
+
+.open-source--list {
+  @mixin unstyled-list;
+  margin: 1rem 0;
+}

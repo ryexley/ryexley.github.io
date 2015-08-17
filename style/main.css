@@ -41,6 +41,7 @@ main {
 
 .section-header {
   border-bottom: 1px solid $strokeColor;
+  color: $sectionHeaderColor;
   margin: 0;
   padding-left: 2.5rem;
   position: relative;

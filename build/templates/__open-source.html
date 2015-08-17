@@ -1,0 +1,20 @@
+<section id="open-source" class="open-source">
+  <header>
+    <h1 class="section-header">Open Source / Code</h1>
+  </header>
+  <p>A collection of open source projects I've either created or contributed to.</p>
+  <ul class="open-source--list">
+  {{#each projects}}
+    <li class="open-source--entry">
+      <h3 class="open-source--entry-name">
+      {{#if url}}
+        <a href="{{url}}">{{projectName}}</a>
+      {{else}}
+        {{projectName}}
+      {{/if}}
+      </h3>
+      <p>{{description}}</p>
+    </li>
+  {{/each}}
+  </ul>
+</section>

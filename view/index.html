@@ -41,16 +41,13 @@
     <main id="main-content">
       <div class="contact-details-toggle" data-toggle="#contact-details">Contact info <i class="fa fa-angle-down"></i></div>
       <section id="contact-details" class="contact-details hide">
-        <header>
-          <h1 class="section-header">Contact Information</h1>
-          <div class="contact-details--email">bob@yexley.net</div>
-          <div class="contact-details--website">http://bob.yexley.net</div>
-          <div class="contact-details--phone">(865) 399-3696</div>
-          <div class="contact-details--address">
-            <div class="contact-details--address--line1">2706 Berringer Station Ln.</div>
-            <div class="contact-details--address--line2">Knoxville, TN 37932</div>
-          </div>
-        </header>
+        <h1 class="section-header">Contact Information</h1>
+        <div class="contact-details--content">
+          <div class="contact-detail contact-details--email">bob@yexley.net</div>
+          <div class="contact-detail contact-details--website">http://bob.yexley.net</div>
+          <div class="contact-detail contact-details--phone">(865) 399-3696</div>
+          <div class="contact-detail contact-details--location">Knoxville, TN</div>
+        </div>
       </section>
       <section id="skills" class="skills">
         <header>
@@ -60,14 +57,14 @@
           <li class="skill-category">
           Web Development (Advanced)
             <ul class="skill-category--keywords keyword-list">
+              <li class="keyword skill-category--keyword keyword-JavaScript">
+                JavaScript
+              </li>
               <li class="keyword skill-category--keyword keyword-HTML5">
                 HTML5
               </li>
               <li class="keyword skill-category--keyword keyword-CSS3">
                 CSS3
-              </li>
-              <li class="keyword skill-category--keyword keyword-JavaScript">
-                JavaScript
               </li>
               <li class="keyword skill-category--keyword keyword-ES6">
                 ES6
@@ -81,10 +78,10 @@
               <li class="keyword skill-category--keyword keyword-Flux">
                 Flux
               </li>
-              <li class="keyword skill-category--keyword keyword-Backbone.js">
+              <li class="keyword skill-category--keyword keyword-Backbonejs">
                 Backbone.js
               </li>
-              <li class="keyword skill-category--keyword keyword-Knockout.js">
+              <li class="keyword skill-category--keyword keyword-Knockoutjs">
                 Knockout.js
               </li>
               <li class="keyword skill-category--keyword keyword-Webpack">
@@ -107,7 +104,7 @@
               <li class="keyword skill-category--keyword keyword-Hypermedia">
                 Hypermedia
               </li>
-              <li class="keyword skill-category--keyword keyword-node.js">
+              <li class="keyword skill-category--keyword keyword-nodejs">
                 node.js
               </li>
               <li class="keyword skill-category--keyword keyword-SQL">
@@ -124,8 +121,11 @@
               <li class="keyword skill-category--keyword keyword-Sublime Text">
                 Sublime Text
               </li>
-              <li class="keyword skill-category--keyword keyword-Git/GitHub">
-                Git/GitHub
+              <li class="keyword skill-category--keyword keyword-Git">
+                Git
+              </li>
+              <li class="keyword skill-category--keyword keyword-GitHub">
+                GitHub
               </li>
               <li class="keyword skill-category--keyword keyword-Terminal">
                 Terminal
@@ -165,6 +165,7 @@
                   <li class="keyword work-history--entry-keyword keyword-React">React</li>
                   <li class="keyword work-history--entry-keyword keyword-Webpack">Webpack</li>
                   <li class="keyword work-history--entry-keyword keyword-Ruby on Rails">Ruby on Rails</li>
+                  <li class="keyword work-history--entry-keyword keyword-nodejs">node.js</li>
                   <li class="keyword work-history--entry-keyword keyword-Git">Git</li>
                   <li class="keyword work-history--entry-keyword keyword-GitHub">GitHub</li>
                 </ul>
@@ -197,8 +198,8 @@
                   <li class="keyword work-history--entry-keyword keyword-CSS3">CSS3</li>
                   <li class="keyword work-history--entry-keyword keyword-SASS">SASS</li>
                   <li class="keyword work-history--entry-keyword keyword-Compass">Compass</li>
-                  <li class="keyword work-history--entry-keyword keyword-Knockout.js">Knockout.js</li>
-                  <li class="keyword work-history--entry-keyword keyword-Backbone.js">Backbone.js</li>
+                  <li class="keyword work-history--entry-keyword keyword-Knockoutjs">Knockout.js</li>
+                  <li class="keyword work-history--entry-keyword keyword-Backbonejs">Backbone.js</li>
                   <li class="keyword work-history--entry-keyword keyword-Cordova">Cordova</li>
                   <li class="keyword work-history--entry-keyword keyword-Git">Git</li>
                   <li class="keyword work-history--entry-keyword keyword-GitHub">GitHub</li>
@@ -230,11 +231,11 @@
                 </h5>
                 <ul class="keyword-list work-history--entry-keywords">
                   <li class="keyword work-history--entry-keyword keyword-JavaScript">JavaScript</li>
-                  <li class="keyword work-history--entry-keyword keyword-jQuery">jQuery</li>
                   <li class="keyword work-history--entry-keyword keyword-HTML5">HTML5</li>
                   <li class="keyword work-history--entry-keyword keyword-CSS">CSS</li>
+                  <li class="keyword work-history--entry-keyword keyword-jQuery">jQuery</li>
                   <li class="keyword work-history--entry-keyword keyword-LessCSS">LessCSS</li>
-                  <li class="keyword work-history--entry-keyword keyword-ASP.NET MVC">ASP.NET MVC</li>
+                  <li class="keyword work-history--entry-keyword keyword-ASPNET MVC">ASP.NET MVC</li>
                   <li class="keyword work-history--entry-keyword keyword-NancyFx">NancyFx</li>
                   <li class="keyword work-history--entry-keyword keyword-C#">C#</li>
                   <li class="keyword work-history--entry-keyword keyword-Hypermedia">Hypermedia</li>
@@ -271,7 +272,7 @@
                       <li class="keyword work-history--entry-keyword keyword-C#">C#</li>
                       <li class="keyword work-history--entry-keyword keyword-WinForms">WinForms</li>
                       <li class="keyword work-history--entry-keyword keyword-Silverlight">Silverlight</li>
-                      <li class="keyword work-history--entry-keyword keyword-ASP.NET MVC">ASP.NET MVC</li>
+                      <li class="keyword work-history--entry-keyword keyword-ASPNET MVC">ASP.NET MVC</li>
                       <li class="keyword work-history--entry-keyword keyword-jQuery">jQuery</li>
                       <li class="keyword work-history--entry-keyword keyword-TSQL">TSQL</li>
                       <li class="keyword work-history--entry-keyword keyword-WCF">WCF</li>
@@ -309,7 +310,7 @@
                     </h5>
                     <ul class="keyword-list work-history--entry-keywords">
                       <li class="keyword work-history--entry-keyword keyword-C#">C#</li>
-                      <li class="keyword work-history--entry-keyword keyword-ASP.NET">ASP.NET</li>
+                      <li class="keyword work-history--entry-keyword keyword-ASPNET">ASP.NET</li>
                       <li class="keyword work-history--entry-keyword keyword-jQuery">jQuery</li>
                       <li class="keyword work-history--entry-keyword keyword-SQL Server">SQL Server</li>
                       <li class="keyword work-history--entry-keyword keyword-TSQL">TSQL</li>
@@ -341,13 +342,13 @@
                     </h5>
                     <ul class="keyword-list work-history--entry-keywords">
                       <li class="keyword work-history--entry-keyword keyword-C#">C#</li>
-                      <li class="keyword work-history--entry-keyword keyword-ASP.NET">ASP.NET</li>
+                      <li class="keyword work-history--entry-keyword keyword-ASPNET">ASP.NET</li>
                       <li class="keyword work-history--entry-keyword keyword-jQuery">jQuery</li>
                       <li class="keyword work-history--entry-keyword keyword-Windows Services">Windows Services</li>
                       <li class="keyword work-history--entry-keyword keyword-SQL Server">SQL Server</li>
                       <li class="keyword work-history--entry-keyword keyword-TSQL">TSQL</li>
                       <li class="keyword work-history--entry-keyword keyword-Subversion">Subversion</li>
-                      <li class="keyword work-history--entry-keyword keyword-CruiseControl.NET">CruiseControl.NET</li>
+                      <li class="keyword work-history--entry-keyword keyword-CruiseControlNET">CruiseControl.NET</li>
                       <li class="keyword work-history--entry-keyword keyword-NAnt">NAnt</li>
                     </ul>
                   </div>
@@ -385,7 +386,7 @@
                       <li class="keyword work-history--entry-keyword keyword-WinForms">WinForms</li>
                       <li class="keyword work-history--entry-keyword keyword-SQL Server">SQL Server</li>
                       <li class="keyword work-history--entry-keyword keyword-TSQL">TSQL</li>
-                      <li class="keyword work-history--entry-keyword keyword-CruiseControl.NET">CruiseControl.NET</li>
+                      <li class="keyword work-history--entry-keyword keyword-CruiseControlNET">CruiseControl.NET</li>
                     </ul>
                   </div>
                   <div class="work-history--body">
@@ -466,6 +467,26 @@
               </li>
           </ul>
         </div>
+      </section>
+      <section id="open-source" class="open-source">
+        <header>
+          <h1 class="section-header">Open Source / Code</h1>
+        </header>
+        <p>A collection of open source projects I've either created or contributed to.</p>
+        <ul class="open-source--list">
+          <li class="open-source--entry">
+            <h3 class="open-source--entry-name">
+              <a href="https://github.com/ryexley/sycamore">Sycamore</a>
+            </h3>
+            <p>A JavaScript mixin that simplifies the organization and execution of jQuery &#x60;$.ajax&#x60; calls.</p>
+          </li>
+          <li class="open-source--entry">
+            <h3 class="open-source--entry-name">
+              <a href="https://github.com/ryexley/sumac">Sumac</a>
+            </h3>
+            <p>A JavaScript mixin that extends a module with postal.js messaging functionality. Supports both publishing and subscribing functions, as well as a simple messages and subscriptions configuration syntax.</p>
+          </li>
+        </ul>
       </section>
       <section class="publications">
       </section>

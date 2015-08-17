@@ -1,0 +1,11 @@
+{
+  "openSource": [{
+    "projectName": "Sycamore",
+    "url": "https://github.com/ryexley/sycamore",
+    "description": "A JavaScript mixin that simplifies the organization and execution of jQuery `$.ajax` calls."
+  }, {
+    "projectName": "Sumac",
+    "url": "https://github.com/ryexley/sumac",
+    "description": "A JavaScript mixin that extends a module with postal.js messaging functionality. Supports both publishing and subscribing functions, as well as a simple messages and subscriptions configuration syntax."
+  }]
+}

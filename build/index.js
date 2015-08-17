@@ -15,22 +15,9 @@ var buildApi = {
     });
   },
 
-  enhanceResumeData: function (data) {
-    data = _.merge({}, data, {
-      work: {
-        featuredEntryCount: 3,
-        history: data.work
-      }
-    });
-
-    return data;
-  },
-
   generate: function (options) {
     options = options || {};
     var self = this;
-
-    options.data = this.enhanceResumeData(options.data);
 
     Templates.init(function () {
       Templates.getMain(function (templateSource) {

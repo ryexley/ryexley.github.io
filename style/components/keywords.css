@@ -17,9 +17,15 @@
 }
 
 .keyword-JavaScript {
-  background: rgba(239, 218, 91, 1);
+  background: #efda5b;
   border: 1px solid #000;
   color: #000;
+
+  &::before {
+    content: "\f08a";
+    font-family: FontAwesome;
+    margin: 0 .25rem 0 -.25rem;
+  }
 }
 
 .keyword-HTML,
@@ -27,6 +33,12 @@
   background: rgba(239, 101, 52, 1);
   border: 1px solid rgba(226, 78, 48, 1);
   color: #fff;
+
+  &::before {
+    content: "\f13b";
+    font-family: FontAwesome;
+    margin: 0 .25rem 0 -.25rem;
+  }
 }
 
 .keyword-CSS,
@@ -34,4 +46,32 @@
   background: rgba(58, 170, 218, 1);
   border: 1px solid rgba(29, 115, 180, 1);
   color: #fff;
+
+  &::before {
+    content: "\f13c";
+    font-family: FontAwesome;
+    margin: 0 .25rem 0 -.25rem;
+  }
+}
+
+.keyword-nodejs {
+  background: rgba(130, 187, 34, 1);
+  border: 1px solid rgba(48, 48, 48, 1);
+  color: #fff;
+}
+
+.keyword-Git {
+  &::before {
+    content: "\f126";
+    font-family: FontAwesome;
+    margin: 0 .25rem 0 -.25rem;
+  }
+}
+
+.keyword-GitHub {
+  &::before {
+    content: "\f09b";
+    font-family: FontAwesome;
+    margin: 0 .25rem 0 -.25rem;
+  }
 }

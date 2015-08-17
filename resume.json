@@ -8,8 +8,6 @@
     "website": "http://bob.yexley.net",
     "summary": "Family-first husband and father of two boys, I believe a good work-life balance is essential to maintaining the focus and productivity needed to achieve great results. I believe in using the right tool for the job to get that done in the most effective and efficient manner possible. In my 15+ years of experience, that has involved the use of various tools and platforms, but most recently my focus and specialization has been on native front-end web application development using HTML5, CSS3 and JavaScript. I'm passionate about delivering high-quality, user-friendly solutions that deliver business value to my customers and clients on the most ubiquitous and accessible platform available to them: the web.",
     "location": {
-      "address": "2706 Berringer Station Ln.",
-      "postalCode": "37932",
       "city": "Knoxville",
       "countryCode": "TN",
       "region": "East Tennessee"
@@ -34,7 +32,7 @@
       "website": "http://daveramsey.com",
       "startDate": "November 2014",
       "endDate": "Present",
-      "keywords": ["JavaScript", "HTML5", "CSS3", "SASS", "React", "Webpack", "Ruby on Rails", "Git", "GitHub"],
+      "keywords": ["JavaScript", "HTML5", "CSS3", "SASS", "React", "Webpack", "Ruby on Rails", "node.js", "Git", "GitHub"],
       "summary": "Currently contracting for Ramsey Solutions as a front-end web developer helping build the SmartDollar site and application. We're applying responsive design methodologies to make applications available in web browsers on any device.",
       "highlights": [
         "Designed and implemented a solution for modular JavaScript for the SmartDollar application using vanilla JavaScript and namespacing",
@@ -62,7 +60,7 @@
       "website": "http://foodtodonate.com",
       "startDate": "September 2011",
       "endDate": "December 2012",
-      "keywords": ["JavaScript", "jQuery", "HTML5", "CSS", "LessCSS", "ASP.NET MVC", "NancyFx", "C#", "Hypermedia"],
+      "keywords": ["JavaScript", "HTML5", "CSS", "jQuery", "LessCSS", "ASP.NET MVC", "NancyFx", "C#", "Hypermedia"],
       "summary": "Built data-driven web applications and backend services. Single-page JavaScript applications using Backbone.js and jQuery, with HTML5 and LESS/CSS, calling a HTTP/Hypermedia API written with the Nancy framework in C# on the server side.",
       "highlights": []
     },
@@ -197,9 +195,9 @@
       "name": "Web Development",
       "level": "Advanced",
       "keywords": [
+        "JavaScript",
         "HTML5",
         "CSS3",
-        "JavaScript",
         "ES6",
         "ES2015",
         "React",
@@ -227,7 +225,8 @@
       "level": "Advanced",
       "keywords": [
         "Sublime Text",
-        "Git/GitHub",
+        "Git",
+        "GitHub",
         "Terminal",
         "Chrome/DevTools"
       ]

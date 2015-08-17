@@ -4,9 +4,11 @@ $baseFontColor: #3a4145;
 $baseFontWeight: 300;
 
 $appBackgroundColor: #fff; /* #f7fafb; */
-$linkColor: rgba(60, 75, 85, 1);
+$linkColor: #09c;
 $linkHoverColor: #0cf;
 $documentBackgroundColor: #151718;
 $strokeColor: #e3edf3;
-$bp-desktop: 880px;
 $keywordBackgroundColor: #f7fafb;
+$sectionHeaderColor: #369;
+
+$bp-desktop: 880px;

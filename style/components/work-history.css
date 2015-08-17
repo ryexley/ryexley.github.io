@@ -16,6 +16,8 @@
 }
 
 .work-history--summary {
+  position: relative;
+
   header {
     background: $keywordBackgroundColor;
     border: 1px solid $strokeColor;
@@ -35,11 +37,17 @@
 }
 
 .work-history--entry-position {
-  font-style: italic;;
+  font-style: italic;
 }
 
 .work-history--entry-dates {
   margin: .5rem 0;
+
+  @mixin min-width $bp-desktop {
+    position: absolute;
+    right: 1rem;
+    top: .25rem;
+  }
 }
 
 .work-history--entry-keywords {

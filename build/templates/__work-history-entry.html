@@ -17,7 +17,7 @@
   </h5>
   <ul class="keyword-list work-history--entry-keywords">
   {{#each keywords}}
-    <li class="keyword work-history--entry-keyword keyword-{{this}}">{{this}}</li>
+    <li class="keyword work-history--entry-keyword keyword-{{stripChars this}}">{{this}}</li>
   {{/each}}
   </ul>
 </div>
