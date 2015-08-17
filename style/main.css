@@ -4,8 +4,26 @@
 @import "base/**/*.css";
 @import "components/**/*.css";
 
+.browserupgrade {
+  background: #f00;
+  color: #fff;
+  padding: 1rem 1.5rem;
+
+  a, a:hover {
+    color: #fff;
+  }
+}
+
 body {
   background: $appBackgroundColor;
+}
+
+a {
+  color: $linkColor;
+}
+
+a:hover {
+  color: $linkHoverColor;
 }
 
 main {

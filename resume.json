@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Bob Yexley",
-    "label": "Web and Distributed Software Developer",
+    "label": "Front End Web and Distributed Software Developer",
     "picture": "",
     "email": "bob@yexley.net",
     "phone": "(865) 399-3696",
@@ -212,11 +212,14 @@
       ]
     },
     {
-      "name": "Architecture",
+      "name": "Architecture and Backend",
       "level": "Intermediate",
       "keywords": [
         "REST",
-        "Hypermedia"
+        "Hypermedia",
+        "node.js",
+        "SQL",
+        "NoSQL"
       ]
     },
     {

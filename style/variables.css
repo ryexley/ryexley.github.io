@@ -1,9 +1,11 @@
-$baseFont: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Ubuntu, Arial, "Lucida Grande", sans-serif;
+$baseFont: "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Ubuntu, Tahoma, Arial, "Lucida Grande", sans-serif;
 $monospacedFont: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 $baseFontColor: #3a4145;
 $baseFontWeight: 300;
 
 $appBackgroundColor: #fff; /* #f7fafb; */
+$linkColor: rgba(60, 75, 85, 1);
+$linkHoverColor: #0cf;
 $documentBackgroundColor: #151718;
 $strokeColor: #e3edf3;
 $bp-desktop: 880px;

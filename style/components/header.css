@@ -5,7 +5,7 @@ $headerGradientStop: rgba(49, 142, 223,.95);
 header.main {
   @mixin centered;
   @mixin text-shadow;
-  background: transparent url("../../images/family-downtown-knoxville.jpg") no-repeat center center;
+  background: transparent url("../../images/family-downtown-knoxville.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   margin: 0;
@@ -15,6 +15,7 @@ header.main {
   z-index: 1;
 
   &::before {
+    background: $headerGradientStop;
     background: linear-gradient(145deg, $headerGradientStart, $headerGradientStop);
     bottom: 0;
     content: " ";
@@ -54,7 +55,7 @@ header.main {
 }
 
 .basics--name {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin: 1rem;
 }
 
@@ -123,10 +124,12 @@ header.main {
   height: 3rem;
   left: 50%;
   margin-left: -1.5rem;
+  opacity: .5;
   position: absolute;
   text-align: center;
   width: 3rem;
   z-index: 4;
+  text-decoration: none;
   transition: all 0.5s ease;
 
   span {
@@ -153,12 +156,29 @@ header.main {
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
+    opacity: .5;
     transform: translateY(0);
   }
   40% {
+    opacity: 1;
     transform: translateY(-7px);
   }
   60% {
+    opacity: 1;
     transform: translateY(-3px);
+  }
+}
+
+.old-ie {
+  header.main {
+    max-height: $headerMinHeight;
+  }
+
+  .main-header--content {
+    top: 35%;
+  }
+
+  .scroll-down-indicator {
+    display: none;
   }
 }

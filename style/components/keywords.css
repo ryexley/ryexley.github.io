@@ -15,3 +15,23 @@
   margin: 0 0.5rem 0 0;
   padding: 0.25rem 0.75rem;
 }
+
+.keyword-JavaScript {
+  background: rgba(239, 218, 91, 1);
+  border: 1px solid #000;
+  color: #000;
+}
+
+.keyword-HTML,
+.keyword-HTML5 {
+  background: rgba(239, 101, 52, 1);
+  border: 1px solid rgba(226, 78, 48, 1);
+  color: #fff;
+}
+
+.keyword-CSS,
+.keyword-CSS3 {
+  background: rgba(58, 170, 218, 1);
+  border: 1px solid rgba(29, 115, 180, 1);
+  color: #fff;
+}

@@ -12,12 +12,19 @@
   margin: 1rem 0;
 }
 
-.work-history--entry {}
+.work-history--entry {
+}
 
-.work-history--summary {}
+.work-history--summary {
+  header {
+    background: $keywordBackgroundColor;
+    border: 1px solid $strokeColor;
+    border-radius: 4px;
+    padding: 0 .75rem;
+  }
+}
 
 .work-history--body {
-  border-bottom: 1px solid $strokeColor;
   margin: 0 0 1rem 0;
   padding: 0 0 1rem 0;
 }
@@ -27,8 +34,12 @@
   margin: 0.5rem 0;
 }
 
+.work-history--entry-position {
+  font-style: italic;;
+}
+
 .work-history--entry-dates {
-  margin: 0.25rem 0;
+  margin: .5rem 0;
 }
 
 .work-history--entry-keywords {
@@ -38,6 +49,10 @@
   li {
     margin: 0.5rem 0.5rem 0.5rem 0;
   }
+}
+
+.work-history--entry-highlights {
+  padding-bottom: 1rem;
 }
 
 .work-history--entry-company-label,

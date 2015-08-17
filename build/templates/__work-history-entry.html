@@ -1,12 +1,14 @@
 <div class="work-history--summary">
-  <h3 class="work-history--entry-company">
-    {{#if website}}
-      <a href="{{website}}">{{company}}</a>
-    {{else}}
-      {{company}}
-    {{/if}}
-  </h3>
-  <h4 class="work-history--entry-position">{{position}}</h4>
+  <header>
+    <h3 class="work-history--entry-company">
+      {{#if website}}
+        <a href="{{website}}">{{company}}</a>
+      {{else}}
+        {{company}}
+      {{/if}}
+    </h3>
+    <h4 class="work-history--entry-position">{{position}}</h4>
+  </header>
   <h5 class="work-history--entry-dates">
     <span class="work-history--entry-date-from-label">From</span>
     <span class="work-history--entry-date-from">{{startDate}}</span>

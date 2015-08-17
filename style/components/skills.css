@@ -19,11 +19,3 @@
     margin: 0.25rem 0.5rem 0.25rem 0;
   }
 }
-
-.skill-category--keyword {
-  background: $keywordBackgroundColor;
-  border: 1px solid $strokeColor;
-  border-radius: 1rem;
-  margin: 0 0.5rem 0 0;
-  padding: 0.25rem 0.75rem;
-}
