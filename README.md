@@ -11,4 +11,10 @@ npm run edit
 
 Starts BrowserSync on port `7001` and runs `gulp watch`. Navigate to [http://localhost:7001](http://localhost:7001).
 
-Edit templates in `src/templates` folder, and CSS files in `src/css` folder. Gulp will watch and build CSS to `assets/css`. Changes to templates will trigger a re-generation of `index.html`. Any changes to `index.html`, `assets/**/*.css` or `assets/**/*.js` will trigger a refresh of the browser via BrowserSync.
+* Edit the following files to make updates:
+  * Content: `src/resume.json` and `src/resume.enhancements.json` are merged together into a single JSON object which is fed to the main Handlebars layout file, `src/templates/resume-template.html`
+  * Templates: `src/templates` - the Handlebars/HTML templates the Resume HTML is built from
+  * CSS: `src/css` - modularized CSS structure is processed by PostCSS and generated to `assets/css`
+  * JS: `assets/js/main.js` - the lone JS module that drives the rendered resume HTML in the browser
+* Any change to any template or either of the content files will trigger a re-generation of `index.html` in the root, which is the rendered, resume output HTML
+* Any changes to `index.html`, `assets/**/*.css` or `assets/**/*.js` will trigger a refresh of the browser via BrowserSync.
