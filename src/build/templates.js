@@ -4,7 +4,7 @@ var _ = require("lodash");
 var Handlebars = require("handlebars");
 
 function registerPartials (next) {
-  var templatePath = path.resolve(__dirname, "templates"),
+  var templatePath = path.resolve(__dirname, "../templates"),
       templates = fs.readdirSync(templatePath);
 
   templates.forEach(function (template) {
@@ -14,7 +14,7 @@ function registerPartials (next) {
 
     if (extension === ".html") {
       if (firstTwo === "__") {
-        var partialFilepath = path.resolve(__dirname, "templates", template);
+        var partialFilepath = path.resolve(__dirname, "../templates", template);
         fs.readFile(partialFilepath, "utf-8", function (err, partialContent) {
           if (err) {
             console.log("ERROR registering partial:", partialFilepath, err);
@@ -102,7 +102,7 @@ module.exports = {
   },
 
   getMain: function (next) {
-    var templatePath = path.resolve(__dirname, "templates/resume-template.html");
+    var templatePath = path.resolve(__dirname, "../templates/resume-template.html");
 
     fs.readFile(templatePath, "utf-8", function (err, contents) {
       if (err) {

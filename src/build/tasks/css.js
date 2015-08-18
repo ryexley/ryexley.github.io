@@ -11,7 +11,7 @@ var csswring = require("csswring");
 
 var processors = [
   autoprefixer({ browsers: ["last 2 version"]}),
-  imports({ path: path.join(__dirname, "../../style"), glob: true }),
+  imports({ path: path.join(__dirname, "../../assets/css"), glob: true }),
   cssnext(),
   mixins,
   nested,
@@ -21,8 +21,8 @@ var processors = [
 
 gulp.task("css", ["clean:css"], function () {
 
-  gulp.src(path.join(__dirname, "../../style", "main.css"))
+  gulp.src(path.join(__dirname, "../../css", "main.css"))
       .pipe(postcss(processors))
-      .pipe(gulp.dest(path.join(__dirname, "../../view/style")));
+      .pipe(gulp.dest(path.join(__dirname, "../../../assets/css")));
 
 });

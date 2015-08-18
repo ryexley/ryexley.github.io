@@ -13,6 +13,6 @@
 var requireDir = require("require-dir");
 
 // Require all tasks in gulp/tasks, including subfolders
-requireDir("./build/tasks", {
+requireDir("./src/build/tasks", {
   recurse: true
 });
