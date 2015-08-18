@@ -35,6 +35,14 @@
   }
 }
 
+.profile-Contact {
+  a {
+    &::after {
+      content: "\f022";
+    }
+  }
+}
+
 .profile-Twitter {
   a {
     &::after {

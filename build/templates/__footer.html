@@ -1,0 +1,16 @@
+<footer class="main">
+  <div class="main-footer--content">
+    <div id="contact-details" class="footer--contact-details">
+      <h3 class="section-header">Contact Information</h3>
+      <div class="picture" style="background-image: url({{data.gravatarUrl}}?s=250)">
+        <span>Just a picture of me</span>
+      </div>
+      <div class="contact-details--content">
+        <div class="contact-detail contact-details--email">{{data.email}}</div>
+        <div class="contact-detail contact-details--website">{{data.website}}</div>
+        <div class="contact-detail contact-details--phone">{{data.phone}}</div>
+        <div class="contact-detail contact-details--location">{{data.location.city}}, {{data.location.countryCode}}</div>
+      </div>
+    </div>
+  </div>
+</footer>

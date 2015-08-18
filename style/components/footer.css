@@ -1,0 +1,79 @@
+$footerGradientStart: rgba(10, 10, 10,.95);
+$footerGradientStop: rgba(50, 50, 50,.95);
+$footerIconColor: #253031;
+
+footer.main {
+  @mixin text-shadow;
+  color: #718487;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    background: $footerGradientStop;
+    background: linear-gradient(145deg, $footerGradientStart, $footerGradientStop);
+    bottom: 0;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .section-header {
+    border: none;
+    color: #a0adaf;
+  }
+}
+
+.main-footer--content {
+  position: relative;
+  z-index: 3;
+
+  @mixin min-width $bp-desktop {
+    margin-left: auto;
+    margin-right: auto;
+    width: $bp-desktop;
+  }
+}
+
+.footer--contact-details {
+  @mixin clearfix;
+  margin: 0 1rem;
+
+  .section-header {
+    padding-left: 1.5rem;
+
+    &::before {
+      color: $footerIconColor;
+      content: "\f05a";
+    }
+  }
+
+  .picture {
+    background-size: cover;
+    border: 2px solid #000;
+    border-radius: 50%;
+    content: " ";
+    float: left;
+    height: 5.5rem;
+    margin: 1rem 1rem 1rem 0;
+    width: 5.5rem;
+
+    span {
+      display: none;
+    }
+  }
+
+  .contact-details--content {
+    float: left;
+    padding-left: 0;
+  }
+
+  .contact-detail {
+    &::before {
+      color: $footerIconColor;
+    }
+  }
+}

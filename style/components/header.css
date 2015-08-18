@@ -33,7 +33,7 @@ header.main {
     p {
       margin-left: auto;
       margin-right: auto;
-      width: $bp-desktop;
+      width: $bp-tablet--wide;
     }
   }
 }

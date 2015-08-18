@@ -6,24 +6,13 @@
     "email": "bob@yexley.net",
     "phone": "(865) 399-3696",
     "website": "http://bob.yexley.net",
-    "summary": "Family-first husband and father of two boys, I believe a good work-life balance is essential to maintaining the focus and productivity needed to achieve great results. I believe in using the right tool for the job to get that done in the most effective and efficient manner possible. In my 15+ years of experience, that has involved the use of various tools and platforms, but most recently my focus and specialization has been on native front-end web application development using HTML5, CSS3 and JavaScript. I'm passionate about delivering high-quality, user-friendly solutions that deliver business value to my customers and clients on the most ubiquitous and accessible platform available to them: the web.",
+    "summary": "Family-first husband and father of two boys, I believe a good work-life balance is essential to maintaining the focus and productivity needed to achieve great results. I believe in using the right tool to get the job done in the most effective and efficient manner possible. In my 15+ years of experience, that has involved the use of various tools and platforms, but most recently my focus and specialization has been on native front-end web application development using HTML5, CSS3 and JavaScript connecting to flexible and powerful REST and microservices on the server. I'm passionate about delivering high-quality, user-friendly solutions that deliver business value to my customers and clients on the most ubiquitous and accessible platform available to them: the web.",
     "location": {
       "city": "Knoxville",
       "countryCode": "TN",
       "region": "East Tennessee"
     },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "ryexley",
-        "url": "https://twitter.com/ryexley"
-      },
-      {
-        "network": "GitHub",
-        "username": "ryexley",
-        "url": "https://github.com/ryexley"
-      }
-    ]
+    "profiles": []
   },
   "work": [
     {
