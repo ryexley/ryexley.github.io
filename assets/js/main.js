@@ -2,15 +2,44 @@
 
   var app = global.Resume = global.Resume || {
 
+    debounce: function (func, threshold, execImmediate) {
+      var timeout;
+
+      return function debounced () {
+        var target = this,
+            args = arguments;
+
+        function delayed () {
+          if (!execImmediate) {
+            func.apply(target, args);
+          }
+
+          timeout = null;
+        };
+
+        if (timeout) {
+          global.clearTimeout(timeout);
+        } else if (execImmediate) {
+          func.apply(target, args);
+        }
+
+        timeout = global.setTimeout(delayed, threshold || 100);
+      }
+    },
+
     init: function () {
       this.registerEvents();
-      this.hideElements();
+      this.initHiddenElements();
     },
 
     registerEvents: function () {
-      var $document = $(document);
+      var $window = $(window),
+          $document = $(document);
+
       $document.on("click", "a[href*=#]:not([href=#])", this.slideToPageLink);
       $document.on("click", "[data-toggle]", this.onToggleClick.bind(this));
+      $window.on("resize", this.debounce(this.initHiddenElements.bind(this)));
+      $window.on("orientationchange", this.debounce(this.initHiddenElements.bind(this)));
     },
 
     // adapted from https://css-tricks.com/snippets/jquery/smooth-scrolling/
@@ -50,15 +79,26 @@
       }
     },
 
-    hideElements: function () {
+    initHiddenElements: function () {
       var $elementsToHide = $(".hide");
 
       if ($elementsToHide.length) {
         $elementsToHide.each(function (index, el) {
           var $el = $(el),
-              $toggle = $("<div>").addClass("toggle is-hidden").attr("data-height", $el.outerHeight());
+              $toggle = $el.closest(".toggle"),
+              newHeight = $el.outerHeight();
 
-          $el.removeClass("hide").wrap($toggle);
+          if (!$toggle.length) {
+            $toggle = $("<div>").addClass("toggle is-hidden").attr("data-height", newHeight);
+            $el.wrap($toggle);
+          } else {
+            $toggle.attr("data-height", newHeight);
+          }
+
+          if (!($toggle.hasClass("is-hidden"))) {
+            // force open elements to resize
+            $toggle.css({ height: newHeight });
+          }
         });
       }
     },
