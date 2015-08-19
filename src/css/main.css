@@ -31,7 +31,7 @@ main {
 
   @mixin min-width $bp-desktop {
     margin: 0 auto;
-    width: $bp-desktop;
+    width: $bp-desktop--content-width;
   }
 
   section {

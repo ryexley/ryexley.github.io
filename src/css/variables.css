@@ -12,4 +12,5 @@ $keywordBackgroundColor: #f7fafb;
 $sectionHeaderColor: #369;
 
 $bp-tablet--wide: 768px;
-$bp-desktop: 880px;
+$bp-desktop--content-width: 880px;
+$bp-desktop: 1025px;

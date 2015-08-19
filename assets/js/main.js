@@ -2,6 +2,7 @@
 
   var app = global.Resume = global.Resume || {
 
+    // adapted from http://www.paulirish.com/2009/throttled-smartresize-jquery-event-handler/
     debounce: function (func, threshold, execImmediate) {
       var timeout;
 

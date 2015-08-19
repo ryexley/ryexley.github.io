@@ -34,7 +34,7 @@ footer.main {
   @mixin min-width $bp-desktop {
     margin-left: auto;
     margin-right: auto;
-    width: $bp-desktop;
+    width: $bp-desktop--content-width;
   }
 }
 
