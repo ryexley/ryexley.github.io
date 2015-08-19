@@ -1,5 +1,6 @@
 .basics--profiles {
   @mixin centered-list;
+  animation: fade-in-down .9s;
   text-shadow: none;
   transform-style: preserve3d;
 
