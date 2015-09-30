@@ -18,3 +18,11 @@ Starts BrowserSync on port `7001` and runs `gulp watch`. Navigate to [http://loc
   * JS: `assets/js/main.js` - the lone JS module that drives the rendered resume HTML in the browser
 * Any change to any template or either of the content files will trigger a re-generation of `index.html` in the root, which is the rendered, resume output HTML
 * Any changes to `index.html`, `assets/**/*.css` or `assets/**/*.js` will trigger a refresh of the browser via BrowserSync.
+
+____
+
+### TODO
+
+* Finish print styling elements
+* Integrate Markdown processing into rendering of plain text elements for enhanced capabilities
+* Generate a PDF version based on the generated HTML

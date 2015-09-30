@@ -16,13 +16,22 @@
   },
   "work": [
     {
+      "company": "LeanKit",
+      "position": "Senior Web Developer",
+      "website": "http://leankit.com",
+      "startDate": "September 2015",
+      "endDate": "Present",
+      "keywords": ["JavaScript", "HTML5", "CSS3", "React", "Flux", "node.js", "Git", "GitHub"],
+      "summary": "Working on maintaining the company's flagship Lean/Kanban project management product"
+    },
+    {
       "company": "Lampo Group",
       "position": "Senior JavaScript Engineer (contractor)",
       "website": "http://daveramsey.com",
       "startDate": "November 2014",
-      "endDate": "Present",
+      "endDate": "September 2015",
       "keywords": ["JavaScript", "HTML5", "CSS3", "SASS", "React", "Webpack", "Ruby on Rails", "node.js", "Git", "GitHub"],
-      "summary": "Currently contracting for Ramsey Solutions as a front-end web developer helping build the SmartDollar site and application. We're applying responsive design methodologies to make applications available in web browsers on any device.",
+      "summary": "Contracted for Ramsey Solutions as a front-end web developer helping build the SmartDollar site and application. We applied responsive design methodologies to make applications available in web browsers on any device.",
       "highlights": [
         "Designed and implemented a solution for modular JavaScript for the SmartDollar application using vanilla JavaScript and namespacing",
         "Designed and implemented a reporting application with React and my own implement of Flux using postal.js and the Chartist library for custom charts and graphs"
