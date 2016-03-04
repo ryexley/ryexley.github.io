@@ -1,0 +1,7 @@
+.summary {
+  .section-header {
+    &::before {
+      content: "\f141";
+    }
+  }
+}

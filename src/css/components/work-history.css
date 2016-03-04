@@ -50,7 +50,7 @@
   }
 }
 
-.work-history--entry-keywords {
+.work-history--entry--keywords {
   @mixin floated-list;
   margin: 0;
 

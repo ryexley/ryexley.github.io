@@ -180,6 +180,12 @@
     }
   ],
   "publications": [{
+    "name": "Webpack, step-by-step",
+    "publisher": "Me",
+    "releaseDate": "05/23/2016",
+    "website": "http://bob.yexley.net/webpack-step-by-step/",
+    "summary": "This is a series of blog posts I'm working on writing that provides of step-by-step overview of how to use Webpack for various web application packaging tasks."
+  }, {
     "name": "Modern Web Practices",
     "publisher": "Leanpub",
     "releaseDate": "11/01/2014",
