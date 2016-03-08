@@ -10,6 +10,7 @@ gulp.task("watch", function () {
   gulp.watch([
     r("src/resume.json"),
     r("src/resume.enhancements.json"),
+    r("src/js/**/*.js"),
     r("src/templates/**/*.html"),
     r("assets/**/*.js")
   ], ["generate-resume-html"]);

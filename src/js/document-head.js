@@ -61,8 +61,12 @@ class DocumentHead extends React.Component {
   componentWillUnmount() {}
 
   render() {
+    console.log( "data??", this.props.data );
     return (
-      <div></div>
+      <head>
+        <meta charset="utf-8" />
+        <title>Resume: { this.props.data.name }</title>
+      </head>
     );
   }
 

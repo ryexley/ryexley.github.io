@@ -16,7 +16,7 @@
   padding: 0.25rem 0.75rem;
 }
 
-.keyword-JavaScript {
+.keyword-javascript {
   background: #efda5b;
   border: 1px solid #000;
   color: #000;
@@ -28,8 +28,8 @@
   }
 }
 
-.keyword-HTML,
-.keyword-HTML5 {
+.keyword-html,
+.keyword-html5 {
   background: rgba(239, 101, 52, 1);
   border: 1px solid rgba(226, 78, 48, 1);
   color: #fff;
@@ -41,8 +41,8 @@
   }
 }
 
-.keyword-CSS,
-.keyword-CSS3 {
+.keyword-css,
+.keyword-css3 {
   background: rgba(58, 170, 218, 1);
   border: 1px solid rgba(29, 115, 180, 1);
   color: #fff;
@@ -60,7 +60,7 @@
   color: #fff;
 }
 
-.keyword-Git {
+.keyword-git {
   &::before {
     content: "\f126";
     font-family: FontAwesome;
@@ -68,7 +68,7 @@
   }
 }
 
-.keyword-GitHub {
+.keyword-github {
   &::before {
     content: "\f09b";
     font-family: FontAwesome;
