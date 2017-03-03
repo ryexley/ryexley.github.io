@@ -144,48 +144,10 @@
       ]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "http://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
+  "volunteer": [],
+  "education": [],
+  "awards": [],
   "publications": [{
-    "name": "Webpack, step-by-step",
-    "publisher": "Me",
-    "releaseDate": "05/23/2016",
-    "website": "http://bob.yexley.net/webpack-step-by-step/",
-    "summary": "This is a series of blog posts I'm working on writing that provides of step-by-step overview of how to use Webpack for various web application packaging tasks."
-  }, {
     "name": "Modern Web Practices",
     "publisher": "Leanpub",
     "releaseDate": "11/01/2014",
