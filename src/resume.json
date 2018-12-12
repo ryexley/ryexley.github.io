@@ -16,11 +16,23 @@
   },
   "work": [
     {
+      "company": "Sparkbox",
+      "position": "Web Developer",
+      "website": "https://seesparkbox.com",
+      "startDate": "January 2018",
+      "endDate": "Present",
+      "keywords": ["JavaScript", "HTML5", "CSS3", "React", "node.js", "Git", "GitHub"],
+      "summary": "Web Developer specializing in working with clients to build web responsive and accessible web sites and applications with a focus on moving the web forward by building it a better way.",
+      "highlights": [
+        "Working primarily with a major retail client on improving their ecommerce platform performance by converting it to an improved component-based architecture using React."
+      ]
+    },
+    {
       "company": "LeanKit",
       "position": "Senior Web Developer",
       "website": "http://leankit.com",
       "startDate": "September 2015",
-      "endDate": "Present",
+      "endDate": "December 2017",
       "keywords": ["JavaScript", "HTML5", "CSS3", "React", "Flux", "node.js", "Git", "GitHub"],
       "summary": "Working on maintaining the company's flagship Lean/Kanban project management product"
     },

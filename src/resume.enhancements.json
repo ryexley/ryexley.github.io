@@ -19,6 +19,10 @@
     }]
   },
   "openSource": [{
+    "projectName": "Decked Out Workout",
+    "url": "https://deckedoutworkout.com",
+    "description": "React/Redux web application optimized for mobile devices for facilitating a quick-and-easy workout from anywhere you are when you have time. Code walkthrough available upon request."
+  }, {
     "projectName": "This Resume",
     "url": "https://github.com/ryexley/ryexley.github.io",
     "description": "The code that generates this resume. I like to use this project as a sandbox to try various tools and techniques, and as an example of how I typically organize my code (although this is really an overly simplistic example). It's a simple node.js script that uses React components for each distinct section of the resume to generate a static HTML view. The CSS is modularized and processed with PostCSS and takes advantage of a number of advanced CSS3 techniques for styling a view that is responsive and easy to view from any device. A single JavaScript module handles page initialization, some on-page navigation and toggling the visibility of older work history elements. The entire thing is driven by a JSON Resume Schema compliant document, merged with an additional JSON document that adds some enhanced data beyond what the schema supports for customization. Editing and maintenance is simple, started with npm (which just launches a Gulp watch task), and updates to any file are reflected immediately in-browser with the use of BrowserSync."
