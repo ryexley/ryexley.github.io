@@ -19,6 +19,10 @@
     }]
   },
   "openSource": [{
+    "projectName": "Poplar",
+    "url": "https://github.com/ryexley/poplar",
+    "description": "This project is an Electron menubar application for MacOS that I built for use in controlling a Wemo power outlet for turning a light on and off from my laptop. It's build with Electron, React and Redux."
+  }, {
     "projectName": "Decked Out Workout",
     "url": "https://deckedoutworkout.com",
     "description": "React/Redux web application optimized for mobile devices for facilitating a quick-and-easy workout from anywhere you are when you have time. Code walkthrough available upon request."

@@ -91,15 +91,15 @@ header.main {
   }
 
   .button-js {
-    background-image: url("../../images/js.png");
+    background-image: url("../images/js.png");
   }
 
   .button-html5 {
-    background-image: url("../../images/html5.png");
+    background-image: url("../images/html5.png");
   }
 
   .button-css3 {
-    background-image: url("../../images/css3.png");
+    background-image: url("../images/css3.png");
   }
 
   .button-html5,
@@ -108,7 +108,7 @@ header.main {
   }
 
   .button-nodejs {
-    background-image: url("../../images/node-js.png");
+    background-image: url("../images/node-js.png");
   }
 }
 
